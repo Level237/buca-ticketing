@@ -184,21 +184,37 @@
                     <!-- Navigation -->
                     <ul class="navbar-nav mb-lg-7">
                         <li class="nav-item dropdown">
-                            <a class="nav-link active " href="#dashboardsCollapse" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="dashboardsCollapse">
+                            <a class="nav-link active " href="{{route('dashboard')}}">
                                 <svg viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3.753,13.944v8.25h6v-6a1.5,1.5,0,0,1,1.5-1.5h1.5a1.5,1.5,0,0,1,1.5,1.5v6h6v-8.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M.753,12.444,10.942,2.255a1.5,1.5,0,0,1,2.122,0L23.253,12.444" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                                 <span class="text-buca-secondary -bottom-3">Dashboards</span>
                             </a>
-                            <div class="collapse show" id="dashboardsCollapse">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#pagesCollapse1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>common-file-double-1</title><path class="a" d="M17.25,23.25H3.75a1.5,1.5,0,0,1-1.5-1.5V5.25"></path><rect class="a" x="5.25" y="0.75" width="16.5" height="19.5" rx="1" ry="1"></rect></svg>
+                                <span class="text-buca-secondary">Tickets</span>
+                            </a>
+                            <div class="collapse " id="pagesCollapse1">
                                 <ul class="nav flex-column">
-
                                     <li class="nav-item">
-                                        <a href="{{route('dashboard')}}" class="nav-link active">
-                                            <span>Dashboard</span>
+                                        <a href="#" class="nav-link ">
+                                            <span class="text-buca-secondary">Ajouter un Ticket</span>
+                                        </a>
+                                        <a href="{{route('tickets.index')}}" class="nav-link ">
+                                            <span class="text-buca-secondary">Listes de tickets</span>
                                         </a>
                                     </li>
 
+
                                 </ul>
                             </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                <svg viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3.753,13.944v8.25h6v-6a1.5,1.5,0,0,1,1.5-1.5h1.5a1.5,1.5,0,0,1,1.5,1.5v6h6v-8.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M.753,12.444,10.942,2.255a1.5,1.5,0,0,1,2.122,0L23.253,12.444" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+                                <span class="text-buca-secondary -bottom-3">Voyages</span>
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#pagesCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
@@ -208,13 +224,8 @@
                             <div class="collapse " id="pagesCollapse">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="account.html.htm" class="nav-link ">
-                                            <span>Ajouter un passager</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="user.html.htm" class="nav-link ">
-                                            <span>Mes Passagers</span>
+                                        <a href="#" class="nav-link ">
+                                            <span class="text-buca-secondary">Mes Passagers</span>
                                         </a>
                                     </li>
 
@@ -222,35 +233,9 @@
                             </div>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#pagesCollapse1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>common-file-double-1</title><path class="a" d="M17.25,23.25H3.75a1.5,1.5,0,0,1-1.5-1.5V5.25"></path><rect class="a" x="5.25" y="0.75" width="16.5" height="19.5" rx="1" ry="1"></rect></svg>
-                                <span class="text-buca-secondary">Tickets</span>
-                            </a>
-                            <div class="collapse " id="pagesCollapse1">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a href="account.html.htm" class="nav-link ">
-                                            <span>Listes de tickets</span>
-                                        </a>
-                                    </li>
 
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="chat.html.htm">
-                                <svg viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M11.25,18.75a1.5,1.5,0,0,1-1.5-1.5V9.75a1.5,1.5,0,0,1,1.5-1.5h10.5a1.5,1.5,0,0,1,1.5,1.5v7.5a1.5,1.5,0,0,1-1.5,1.5h-1.5v4.5l-4.5-4.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M6.75,12.75l-3,3v-4.5H2.25a1.5,1.5,0,0,1-1.5-1.5V2.25A1.5,1.5,0,0,1,2.25.75h10.5a1.5,1.5,0,0,1,1.5,1.5v3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-                                <span class="text-buca-secondary">Chat</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="calendar.html.htm">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>calendar</title><rect class="a" x="0.752" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5"></rect><line class="a" x1="0.752" y1="9.75" x2="23.252" y2="9.75"></line><line class="a" x1="6.752" y1="6" x2="6.752" y2="0.75"></line><line class="a" x1="17.252" y1="6" x2="17.252" y2="0.75"></line></svg>
-                                <span class="text-buca-secondary">Voyages</span>
-                            </a>
-                        </li>
+
 
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#tasksCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="tasksCollapse">
@@ -261,12 +246,12 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a href="kanban-board.html.htm" class="nav-link ">
-                                            <span>Listes des Bus</span>
+                                            <span class="text-buca-secondary">Listes des Bus</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="task-details.html.htm" class="nav-link ">
-                                            <span>Ajouter un bus</span>
+                                            <span class="text-buca-secondary">Ajouter un bus</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -376,7 +361,7 @@
                     <a class="d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mx-1 mx-lg-2 w-40px h-40px position-relative link-secondary" data-bs-toggle="offcanvas" href="#offcanvasNotifications" role="button" aria-controls="offcanvasNotifications">
                         <svg viewbox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M10,21.75a2.087,2.087,0,0,0,4.005,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M12 3L12 0.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M12,3a7.5,7.5,0,0,1,7.5,7.5c0,7.046,1.5,8.25,1.5,8.25H3s1.5-1.916,1.5-8.25A7.5,7.5,0,0,1,12,3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
-                            20+<span class="visually-hidden">unread messages</span>
+                            2<span class="visually-hidden">Messages non lues</span>
                         </span>
                     </a>
 
@@ -385,45 +370,6 @@
                         <div class="offcanvas-header px-5">
                             <h3 class="offcanvas-title" id="offcanvasNotificationsLabel">Notifications</h3>
 
-                            <div class="d-flex align-items-start">
-                                <div class="dropdown">
-                                    <a href="javascript: void(0);" class="dropdown-toggle no-arrow w-20px h-20px me-2 text-body" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="16" width="16"><g><circle cx="3.25" cy="12" r="3.25" style="fill: currentColor"></circle><circle cx="12" cy="12" r="3.25" style="fill: currentColor"></circle><circle cx="20.75" cy="12" r="3.25" style="fill: currentColor"></circle></g></svg>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2 text-secondary" height="14" width="14"><g><path d="M23.22,2.06a1.49,1.49,0,0,0-2,.59l-8.5,15.43L6.46,11.29a1.5,1.5,0,1,0-2.21,2l7.64,8.34a1.52,1.52,0,0,0,2.42-.29L23.81,4.1A1.5,1.5,0,0,0,23.22,2.06Z" style="fill: currentColor"></path><path d="M2.61,14.63a1.5,1.5,0,0,0-2.22,2l4.59,5a1.52,1.52,0,0,0,2.11.09,1.49,1.49,0,0,0,.1-2.12Z" style="fill: currentColor"></path><path d="M10.3,13a1.41,1.41,0,0,0,2-.54L16.89,4.1a1.5,1.5,0,1,0-2.62-1.45L9.68,11A1.41,1.41,0,0,0,10.3,13Z" style="fill: currentColor"></path></g></svg>
-                                                Mark as all read
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2 text-secondary" height="14" width="14"><g><path d="M21.5,2.5H2.5a2,2,0,0,0-2,2v3a1,1,0,0,0,1,1h21a1,1,0,0,0,1-1v-3A2,2,0,0,0,21.5,2.5Z" style="fill: currentColor"></path><path d="M21.5,10H2.5a1,1,0,0,0-1,1v8.5a2,2,0,0,0,2,2h17a2,2,0,0,0,2-2V11A1,1,0,0,0,21.5,10Zm-6.25,3.5A1.25,1.25,0,0,1,14,14.75H10a1.25,1.25,0,0,1,0-2.5h4A1.25,1.25,0,0,1,15.25,13.5Z" style="fill: currentColor"></path></g></svg>
-                                                Archive all
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2 text-secondary" height="14" width="14"><g><path d="M21,19.5a1,1,0,0,0,0-2A1.5,1.5,0,0,1,19.5,16V11.14a8.65,8.65,0,0,0-.4-2.62l-11,11Z" style="fill: currentColor"></path><path d="M14.24,21H9.76a.25.25,0,0,0-.24.22,2.64,2.64,0,0,0,0,.28,2.5,2.5,0,0,0,5,0,2.64,2.64,0,0,0,0-.28A.25.25,0,0,0,14.24,21Z" style="fill: currentColor"></path><path d="M1,24a1,1,0,0,0,.71-.28l22-22a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0l-5,5A7.31,7.31,0,0,0,13,3.07V1a1,1,0,0,0-2,0V3.07a8,8,0,0,0-6.5,8.07V16A1.5,1.5,0,0,1,3,17.5a1,1,0,0,0,0,2h.09L.29,22.29a1,1,0,0,0,0,1.42A1,1,0,0,0,1,24Z" style="fill: currentColor"></path></g></svg>
-                                                Disable notifications
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="javascript: void(0);">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2 text-secondary" height="14" width="14"><g><rect x="4.25" y="4.5" width="5.75" height="7.25" rx="1.25" style="fill: currentColor"></rect><path d="M24,10a3,3,0,0,0-3-3H19V2.5a2,2,0,0,0-2-2H2a2,2,0,0,0-2,2V20a3.5,3.5,0,0,0,3.5,3.5h17A3.5,3.5,0,0,0,24,20ZM3.5,21.5A1.5,1.5,0,0,1,2,20V3a.5.5,0,0,1,.5-.5h14A.5.5,0,0,1,17,3V20a3.51,3.51,0,0,0,.11.87.5.5,0,0,1-.09.44.49.49,0,0,1-.39.19ZM22,20a1.5,1.5,0,0,1-3,0V9.5a.5.5,0,0,1,.5-.5H21a1,1,0,0,1,1,1Z" style="fill: currentColor"></path><rect x="12" y="6.05" width="3.5" height="2" rx="0.75" style="fill: currentColor"></rect><rect x="12" y="10.05" width="3.5" height="2" rx="0.75" style="fill: currentColor"></rect><rect x="4" y="14.05" width="11.5" height="2" rx="0.75" style="fill: currentColor"></rect><rect x="4" y="18.05" width="9" height="2" rx="0.75" style="fill: currentColor"></rect></g></svg>
-                                                What's new?
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Button -->
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
                         </div>
 
                         <div class="offcanvas-body p-0">
@@ -431,18 +377,18 @@
                                 <a href="javascript: void(0);" class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="5dfa4398a7f2beddbcfa617402e193f2f13aaa94/2ecb0/assets/images/profiles/profile-28.jpeg" alt="..." class="avatar-img" width="30" height="30">
+                                            <img src="{{asset('assets/img/kipart.png')}}" alt="..." class="avatar-img" width="30" height="30">
                                         </div>
 
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Daniel</h5>
-                                                <small class="text-muted">10 minutes ago</small>
+                                                <h5 class="mb-1">Kipart</h5>
+                                                <small class="text-muted">il y a 10 minutes</small>
                                             </div>
 
                                             <div class="d-flex flex-column">
-                                                <p class="mb-1">RE: Email pre-population from external source</p>
-                                                <small class="text-secondary">Not sure if we'll need any further instruction on how to utilise the encoded ID in links from the new email broadcast tool.</small>
+                                                <p class="mb-1">Titre:Recapitulatif de la journée</p>
+                                                <small class="text-secondary">Nous passerons dans vos locaux pour vous formez en maintenance de vos système de ticketing...</small>
                                             </div>
                                         </div>
                                     </div>
@@ -451,342 +397,23 @@
                                 <a href="javascript: void(0);" class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-info-soft">M</span>
+                                            <img src="{{asset('assets/img/kipart.png')}}" alt="..." class="avatar-img" width="30" height="30">
                                         </div>
 
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Mochahost.com</h5>
-                                                <small class="text-muted">14 minutes ago</small>
+                                                <h5 class="mb-1">Kipart</h5>
+                                                <small class="text-muted">il y a 10 minutes</small>
                                             </div>
 
                                             <div class="d-flex flex-column">
-                                                <p class="mb-1">Customer invoice</p>
-                                                <small class="text-secondary">This is a notice that an invoice has been generated on 05/14/2022.</small>
+                                                <p class="mb-1">Titre:Ticketing</p>
+                                                <small class="text-secondary">Bien evidement nous sommes disponible...</small>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
 
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="{{asset('assets/img/buca.jpg')}}" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Harry</h5>
-                                                <small class="text-muted">32 minutes ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Farewell card</p>
-                                                <small class="text-secondary">Hi everyone, thanks to all who have already signed and contributed to Ellie's leaving card.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="0b34af989cce5e54297f16547b3eff1ace44dad5/eb8ea/assets/images/profiles/profile-20.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Gavin</h5>
-                                                <small class="text-muted">55 minutes ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Weekly cath up</p>
-                                                <small class="text-secondary">Let's see how your emails performed in the past week.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="b12e43e592a36b25ced24c52bc8ae78595f1f2c6/2ceab/assets/images/profiles/profile-24.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Pamela - HR</h5>
-                                                <small class="text-muted">1 hour ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">New starter</p>
-                                                <small class="text-secondary">I wanted to introduce Alan to you all, who starts today in the Operations Team as our new Global Payroll & Benefits Manager.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="9f5880fc99a40d5021e5a133fe72f232e3883d3a/c965d/assets/images/profiles/profile-13.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">James</h5>
-                                                <small class="text-muted">2 hours ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Looking for newsletter analyst</p>
-                                                <small class="text-secondary">Good morning Brian, I hope you can help with the following. I am looking for somebody who can help us create stronger newsletters.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-primary-soft">S</span>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">service.paypal.com</h5>
-                                                <small class="text-muted">3 hours ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">You have a Payout!</p>
-                                                <small class="text-secondary">Please note that it may take a little while for this payment to appear in the Activity section of your account.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-primary-soft">C</span>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">CookieYes</h5>
-                                                <small class="text-muted">5 hours ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Welcome to CookieYes!</p>
-                                                <small class="text-secondary">Welcome to CookieYes! Thank you for creating an account with us.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="102e41d9e1988e0849ecfe402b1d46f4efd3574b/8dc2e/assets/images/profiles/profile-12.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Andrew</h5>
-                                                <small class="text-muted">6 hours ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Congratulations! - and thank you</p>
-                                                <small class="text-secondary">Thank you so much for continuing to leave no stone unturned in pursuit of new milestones of success.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="ea01948f5a48922378b407c27d2b4e5809ed4949/35ecd/assets/images/profiles/profile-11.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Helen</h5>
-                                                <small class="text-muted">9 hours ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Bank Holidays season starts tomorrow</p>
-                                                <small class="text-secondary">Our office will be closed on these days, as it will also be on Friday 6 May.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="eec1f115f0af81936bbe3a4f4a4d043cd3c0e7e4/34439/assets/images/profiles/profile-09.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Tiffany</h5>
-                                                <small class="text-muted">1 day ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">External meetings and events</p>
-                                                <small class="text-secondary">We have updated our external meeting and events protocol. Please have a look at the office board.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-danger-soft">II</span>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Ionos Info</h5>
-                                                <small class="text-muted">2 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Recommend us to earn attractive commissions</p>
-                                                <small class="text-secondary">Happy with your product or service? Sign up for the IONOS Referral Program to recommend us to your business partners, friends or family. We'll reward you with attractive commissions when they place an order.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="102e41d9e1988e0849ecfe402b1d46f4efd3574b/8dc2e/assets/images/profiles/profile-12.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Edward</h5>
-                                                <small class="text-muted">3 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Website change request</p>
-                                                <small class="text-secondary">Please add video overlay option to microsite header image</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-primary">BT</span>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Bootstrap Themes</h5>
-                                                <small class="text-muted">3 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">[Bootstrap Themes] New order (123456)!</p>
-                                                <small class="text-secondary">You've received the following order from alansmith</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="e83422b2242219796524c41b945eb0a4b4b75dfd/caa0b/assets/images/profiles/profile-08.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Greg</h5>
-                                                <small class="text-muted">4 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Greg Smith (Jira) 2</p>
-                                                <small class="text-secondary">[JIRA] (WEB-1022) Add Full Width Video Content Block to microsites</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="790b7dd581a3ac4fd0410afad0fb12c6e93c9e7a/b0657/assets/images/profiles/profile-07.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Michael</h5>
-                                                <small class="text-muted">5 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">Hard drive limit</p>
-                                                <small class="text-secondary">Your hard drive is close to its storage cap. Once exceeded, you can't add new items or sync changes.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <span class="avatar-title text-bg-info">RC</span>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Rave Coffee</h5>
-                                                <small class="text-muted">6 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">It's Double Points - ⏰ 24 hours only</p>
-                                                <small class="text-secondary">Login to your Rave account to place your order and you will automatically earn double points on every $ spent.</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="javascript: void(0);" class="list-group-item list-group-item-action">
-                                    <div class="d-flex">
-                                        <div class="avatar avatar-circle avatar-xs me-2">
-                                            <img src="4b8c918c73e2c72876e4bd4ba8c89401bae69d14/5923c/assets/images/profiles/profile-03.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-grow-1">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">John</h5>
-                                                <small class="text-muted">7 days ago</small>
-                                            </div>
-
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-1">John Po (Jira)</p>
-                                                <small class="text-secondary">Improving slide arrows and indicators on gift impact, testimonial and victories module</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -1352,125 +979,7 @@
                                             <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
                                             <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="5c7ec5413a460dc895a7798c37ce609f43ad36b0/c94b0/assets/images/profiles/profile-29.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Kareem Q. Weeks</span>
-                                            </td>
-                                            <td class="email">eget@aliquetProinvelit.co.uk</td>
-                                            <td class="id">#9761</td>
-                                            <td class="date" data-signed="1622329200">05.30.2021</td>
-                                            <td class="status"><span class="legend-circle bg-danger"></span>Overdue</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <span class="avatar-title text-bg-danger-soft">DH</span>
-                                                </div>
-                                                <span class="name fw-bold">Drew R. Hatfield</span>
-                                            </td>
-                                            <td class="email">Integer.vulputate@facilisi.edu</td>
-                                            <td class="id">#4798</td>
-                                            <td class="date" data-signed="1626562800">07.18.2021</td>
-                                            <td class="status"><span class="legend-circle bg-success"></span>Successful</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="693e2209e9a62e54c60745dd18751d70c3dec10a/9d43e/assets/images/profiles/profile-22.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Kitra F. Strickland</span>
-                                            </td>
-                                            <td class="email">Donec.consectetuer@dolorNulla.net</td>
-                                            <td class="id">#1246</td>
-                                            <td class="date" data-signed="1651791600">05.06.2022</td>
-                                            <td class="status"><span class="legend-circle bg-warning"></span>Pending</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="5dfa4398a7f2beddbcfa617402e193f2f13aaa94/2ecb0/assets/images/profiles/profile-28.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Jack Dennis</span>
-                                            </td>
-                                            <td class="email">Quisque.libero.lacus@torquentper.com</td>
-                                            <td class="id">#1099</td>
-                                            <td class="date" data-signed="1658703600">07.25.2022</td>
-                                            <td class="status"><span class="legend-circle bg-success"></span>Successful</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="d48629dc873bf03c72cd58826b5de65bc800aaac/5bb69/assets/images/profiles/profile-10.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Tyler Hartman</span>
-                                            </td>
-                                            <td class="email">arcu.imperdiet@Pellentesqueultriciesdignissim.com</td>
-                                            <td class="id">#9151</td>
-                                            <td class="date" data-signed="1651359600">05.01.2022</td>
-                                            <td class="status"><span class="legend-circle bg-warning"></span>Pending</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="14bd6c6c1ba1296a1542d31d7dd9490e8bc9e472/d1f70/assets/images/profiles/profile-18.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Hally Gilmore</span>
-                                            </td>
-                                            <td class="email">lacus.Etiam@Pellentesquehabitantmorbi.net</td>
-                                            <td class="id">#9846</td>
-                                            <td class="date" data-signed="1633302000">10.04.2021</td>
-                                            <td class="status"><span class="legend-circle bg-warning"></span>Pending</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check mb-0">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar avatar-circle avatar-xs me-2">
-                                                    <img src="b12e43e592a36b25ced24c52bc8ae78595f1f2c6/2ceab/assets/images/profiles/profile-24.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                </div>
-                                                <span class="name fw-bold">Rosalyn Cherry</span>
-                                            </td>
-                                            <td class="email">at.egestas.a@eunullaat.co.uk</td>
-                                            <td class="id">#9564</td>
-                                            <td class="date" data-signed="1593558000">07.01.2021</td>
-                                            <td class="status"><span class="legend-circle bg-warning"></span>Pending</td>
-                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div> <!-- / .table-responsive -->
@@ -1478,7 +987,7 @@
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="me-5 text-secondary small">
-                                        Showing: <span class="list-pagination-page-first"></span> - <span class="list-pagination-page-last"></span> of <span class="list-pagination-pages"></span>
+                                         <span class="list-pagination-page-first"></span> - <span class="list-pagination-page-last"></span>  <span class="list-pagination-pages"></span>
                                     </div>
 
                                     <!-- Pagination -->
@@ -1500,7 +1009,7 @@
 
                                 <!-- Title -->
                                 <h2 class="card-header-title h4 text-uppercase">
-                                    Order status
+                                    Statut des Tickets
                                 </h2>
 
                                 <!-- Dropdown -->
@@ -1512,12 +1021,7 @@
                                         <a href="javascript: void(0);" class="dropdown-item">
                                             Action
                                         </a>
-                                        <a href="javascript: void(0);" class="dropdown-item">
-                                            Another action
-                                        </a>
-                                        <a href="javascript: void(0);" class="dropdown-item">
-                                            Something else here
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -1532,7 +1036,7 @@
 
                                             <!-- Labels -->
                                             <div class="position-absolute top-50 start-50 translate-middle text-center">
-                                                <p class="fs-5 mb-0 text-muted lh-sm">ordered products</p>
+                                                <p class="fs-5 mb-0 text-muted lh-sm">Tickets</p>
                                                 <h3 class="display-2 fw-bold mb-0">329</h3>
                                             </div>
                                         </div>
@@ -1546,7 +1050,7 @@
                                                         <!-- Label -->
                                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                                             <span class="legend-circle bg-primary"></span>
-                                                            Delivered
+                                                            Delivré
                                                         </p>
                                                     </div>
                                                     <div class="col-auto col-lg">
@@ -1563,7 +1067,7 @@
                                                         <!-- Label -->
                                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                                             <span class="legend-circle bg-dark"></span>
-                                                            In progress
+                                                            En Cours
                                                         </p>
                                                     </div>
                                                     <div class="col-auto col-lg">
@@ -1580,14 +1084,14 @@
                                                         <!-- Label -->
                                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                                             <span class="legend-circle bg-gray-400"></span>
-                                                            To-do
+                                                            Restants
                                                         </p>
                                                     </div>
                                                     <div class="col-auto col-lg">
 
                                                         <!-- Comment -->
                                                         <p class="fs-4 text-muted">
-                                                            26%
+                                                            81%
                                                         </p>
                                                     </div>
                                                 </div> <!-- / .row -->
@@ -1606,7 +1110,7 @@
 
                                 <!-- Title -->
                                 <h2 class="card-header-title h4 text-uppercase">
-                                    Revenue by locations
+                                    Gestion de Revenue
                                 </h2>
                             </div>
 
@@ -1623,38 +1127,7 @@
                     <div class="col d-flex">
 
                         <!-- Card -->
-                        <div class="card border-0 flex-fill w-100">
-                            <div class="card-header border-0 card-header-space-between">
 
-                                <!-- Title -->
-                                <h2 class="card-header-title h4 text-uppercase">
-                                    Sales report
-                                </h2>
-
-                                <ul class="nav">
-                                    <li class="nav-item" data-toggle="chart" data-target="#salesReportChart" data-dataset="0">
-                                        <a class="nav-link active chart-legend" href="#" data-bs-toggle="tab">
-                                            <span class="legend-circle-lg bg-primary"></span>
-                                            Income
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" data-toggle="chart" data-target="#salesReportChart" data-dataset="1">
-                                        <a class="nav-link chart-legend" href="#" data-bs-toggle="tab">
-                                            <span class="legend-circle-lg bg-dark"></span>
-                                            Expense
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="card-body d-flex flex-column">
-
-                                <!-- Chart -->
-                                <div class="chart-container flex-grow-1 h-275px">
-                                    <canvas id="salesReportChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div> <!-- / .row -->
             </div> <!-- / .container-fluid -->
@@ -1665,7 +1138,7 @@
                 <div class="container-fluid mt-4 mb-6 text-muted">
                     <div class="row justify-content-between">
                         <div class="col">
-                            © Dashly. 2023 Webinning.
+                            © K-SOFT. 2023
                         </div>
 
                         <div class="col-auto">
