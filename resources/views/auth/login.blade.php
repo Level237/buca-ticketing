@@ -146,107 +146,94 @@
                 }
             </script>
         <!-- MAIN CONTENT -->
-        <main class="container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-7 col-lg-6 px-lg-4 px-xl-8 d-flex flex-column vh-100 py-6">
+        <main class="container">
 
-                    <!-- Brand -->
-                    <a class="navbar-brand mb-auto" href="/">
-                            <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="50" height="50">
-                            <h4>
-                               Buca Voyage
-                            </h4>
-                    </a>
+            <div class="row align-items-center justify-content-center vh-100">
+                <div class="col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 py-6">
 
-                    <div>
-                        <!-- Title -->
-                        <h1 class="mb-2">
-                            Sign In
-                        </h1>
+                    <!-- Title -->
 
-                        <!-- Subtitle -->
-                        <p class="text-secondary">
-                            Entrez votre adresse email et votre mot de passe  pour avoir access a votre dashboard
-                        </p>
+                    <h1 class="mb-2 text-center">
+                        <img src="{{asset('assets/favicon/buca.jpg')}}" class="" alt="..." width="60" height="60">
+                        Connectez-vous
+                    </h1>
 
-                        <!-- Form -->
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="mb-4">
+                    <!-- Subtitle -->
+                    <p class="text-secondary text-center">
+                        Entrez votre adresse e-mail et votre mot de passe pour accéder au panneau d'administration
+                    </p>
 
-                                        <!-- Label -->
-                                        <label class="form-label">
-                                            Email Address
-                                        </label>
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-4">
 
-                                        <!-- Input -->
-                                        <input type="email" class="form-control" placeholder="Your email address">
-                                    </div>
+                                    <!-- Label -->
+                                    <label class="form-label">
+                                        Adresse Email
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input type="email" class="form-control" placeholder="Your email address">
                                 </div>
-
-                                <div class="col-lg-6">
-                                    <!-- Password -->
-                                    <div class="mb-4">
-
-                                        <div class="row">
-                                            <div class="col">
-
-                                                <!-- Label -->
-                                                <label class="form-label">
-                                                    Password
-                                                </label>
-                                            </div>
-
-                                            <div class="col-auto">
-
-                                                <!-- Help text -->
-                                                <a href="reset-password-cover.html.htm" class="form-text small text-muted link-primary">Forgot password</a>
-                                            </div>
-                                        </div> <!-- / .row -->
-
-                                        <!-- Input -->
-                                        <div class="input-group input-group-merge">
-                                            <input type="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Your password">
-
-                                            <button type="button" class="input-group-text px-4 text-secondary link-primary" data-toggle-password=""></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- / .row -->
-
-                            <div class="form-check">
-
-                                <!-- Input -->
-                                <input type="checkbox" class="form-check-input" id="remember">
-
-                                <!-- Label -->
-                                <label class="form-check-label" for="remember">
-                                    Remember me
-                                </label>
                             </div>
 
-                            <!-- Button -->
-                            <button type="button" class="btn buca-color mt-3">
-                                Connectez vous
-                            </button>
-                        </form>
-                    </div>
+                            <div class="col-12">
+                                <!-- Password -->
+                                <div class="mb-4">
 
-                    <div class="mt-auto">
+                                    <div class="row">
+                                        <div class="col">
 
-                        <!-- Link -->
-                        <small class="mb-0 text-muted">
-                            Don't have an account yet? <a href="sign-up-cover.html.htm" class="fw-semibold">Sign up</a>
-                        </small>
-                    </div>
+                                            <!-- Label -->
+                                            <label class="form-label">
+                                                Mot de Passe
+                                            </label>
+                                        </div>
 
-                </div>
+                                        <div class="col-auto">
 
-                <div class="col-md-5 col-lg-6 d-none d-lg-block">
+                                            <!-- Help text -->
+                                            <a href="reset-password-illustration.html.htm" class="form-text small text-muted link-primary">Forgot password</a>
+                                        </div>
+                                    </div> <!-- / .row -->
 
-                    <!-- Image -->
-                    <div class="bg-size-cover bg-position-center bg-repeat-no-repeat overlay overlay-dark overlay-50 vh-100 me-n4" style="background-image: url({{ asset('assets/img/buca.jpg')}});"></div>
+                                    <!-- Input -->
+                                    <div class="input-group input-group-merge">
+                                        <input type="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Your password">
+
+                                        <button type="button" class="input-group-text px-4 text-secondary link-primary" data-toggle-password=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- / .row -->
+
+                        <div class="form-check">
+
+                            <!-- Input -->
+                            <input type="checkbox" class="form-check-input" id="remember">
+
+                            <!-- Label -->
+                            <label class="form-check-label" for="remember">
+                                Se Souvenir de moi
+                            </label>
+                        </div>
+
+                        <div class="row align-items-center text-center">
+                            <div class="col-12">
+
+                                <!-- Button -->
+                                <button type="button" class="btn w-100 buca-color mt-6 mb-2">Connectez-vous</button>
+                            </div>
+
+                            <div class="col-12">
+
+                                <!-- Link -->
+
+                            </div>
+                        </div> <!-- / .row -->
+                    </form>
                 </div>
             </div> <!-- / .row -->
         </main> <!-- / main -->
