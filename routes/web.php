@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TicketController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\auth\LoginController;
 
@@ -21,4 +22,4 @@ Route::get('/d', function () {
 
 Route::get('/',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
-Route::get('list/tickets',[TicketsController::class,'index'])->name('tickets.index');
+Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');

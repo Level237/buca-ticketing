@@ -191,8 +191,9 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#pagesCollapse1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>common-file-double-1</title><path class="a" d="M17.25,23.25H3.75a1.5,1.5,0,0,1-1.5-1.5V5.25"></path><rect class="a" x="5.25" y="0.75" width="16.5" height="19.5" rx="1" ry="1"></rect></svg>
-                                <span class="text-buca-secondary">Tickets</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-ticket-detailed text-buca-secondary" viewBox="0 0 16 16"> <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z"/> <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"/> </svg>
+                                <span class="text-buca-secondary" style="margin-left: 5px"> Tickets</span>
                             </a>
                             <div class="collapse " id="pagesCollapse1">
                                 <ul class="nav flex-column">
@@ -209,17 +210,22 @@
                                 </ul>
                             </div>
                         </li>
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="{{route('dashboard')}}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
+                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Bordereau</span>
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">
-                                <svg viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3.753,13.944v8.25h6v-6a1.5,1.5,0,0,1,1.5-1.5h1.5a1.5,1.5,0,0,1,1.5,1.5v6h6v-8.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M.753,12.444,10.942,2.255a1.5,1.5,0,0,1,2.122,0L23.253,12.444" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-                                <span class="text-buca-secondary -bottom-3">Voyages</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="IconChangeColor"  height="20" width="20"><path d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" id="mainIconPathAttribute" fill="#ffffff" stroke-width="0.1" stroke="#ff0000"></path></svg>
+                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Voyages</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#pagesCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>common-file-double-1</title><path class="a" d="M17.25,23.25H3.75a1.5,1.5,0,0,1-1.5-1.5V5.25"></path><rect class="a" x="5.25" y="0.75" width="16.5" height="19.5" rx="1" ry="1"></rect></svg>
-                                <span class="text-buca-secondary">Passagers</span>
+                                <svg viewbox="0 0 24 24" height="20" width="20" class="text-buca-secondary" xmlns="http://www.w3.org/2000/svg"><path d="M2.250 6.000 A2.250 2.250 0 1 0 6.750 6.000 A2.250 2.250 0 1 0 2.250 6.000 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M4.5,9.75A3.75,3.75,0,0,0,.75,13.5v2.25h1.5l.75,6H6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M17.250 6.000 A2.250 2.250 0 1 0 21.750 6.000 A2.250 2.250 0 1 0 17.250 6.000 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M19.5,9.75a3.75,3.75,0,0,1,3.75,3.75v2.25h-1.5l-.75,6H18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M9.000 3.750 A3.000 3.000 0 1 0 15.000 3.750 A3.000 3.000 0 1 0 9.000 3.750 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M17.25,13.5a5.25,5.25,0,0,0-10.5,0v2.25H9l.75,7.5h4.5l.75-7.5h2.25Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+                                <span class="text-buca-secondary"  style="margin-left: 5px">Passagers</span>
                             </a>
                             <div class="collapse " id="pagesCollapse">
                                 <ul class="nav flex-column">
@@ -239,18 +245,18 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#tasksCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="tasksCollapse">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" class="nav-link-icon text-buca-secondary" height="18" width="18"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 10.511H10.5"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 14.261H8.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 18.011H8.25"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 23.25H2.25C1.85218 23.25 1.47064 23.092 1.18934 22.8107C0.908035 22.5294 0.75 22.1478 0.75 21.75V6C0.75 5.60218 0.908035 5.22064 1.18934 4.93934C1.47064 4.65804 1.85218 4.5 2.25 4.5H6C6 3.50544 6.39509 2.55161 7.09835 1.84835C7.80161 1.14509 8.75544 0.75 9.75 0.75C10.7446 0.75 11.6984 1.14509 12.4017 1.84835C13.1049 2.55161 13.5 3.50544 13.5 4.5H17.25C17.6478 4.5 18.0294 4.65804 18.3107 4.93934C18.592 5.22064 18.75 5.60218 18.75 6V8.25"></path><path stroke="currentColor" stroke-width="1.5" d="M9.75 4.51099C9.54289 4.51099 9.375 4.34309 9.375 4.13599C9.375 3.92888 9.54289 3.76099 9.75 3.76099"></path><path stroke="currentColor" stroke-width="1.5" d="M9.75 4.51099C9.95711 4.51099 10.125 4.34309 10.125 4.13599C10.125 3.92888 9.95711 3.76099 9.75 3.76099"></path><g><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 23.25C20.5637 23.25 23.25 20.5637 23.25 17.25C23.25 13.9363 20.5637 11.25 17.25 11.25C13.9363 11.25 11.25 13.9363 11.25 17.25C11.25 20.5637 13.9363 23.25 17.25 23.25Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.9239 15.505L17.0189 19.379C16.9543 19.4649 16.8721 19.536 16.7776 19.5873C16.6832 19.6387 16.5789 19.6692 16.4717 19.6768C16.3645 19.6844 16.2569 19.6689 16.1562 19.6313C16.0555 19.5937 15.964 19.535 15.8879 19.459L14.3879 17.959"></path></g></svg>
-                                <span class="text-buca-secondary">Bus</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="IconChangeColor" height="20" width="20"><path d="M13 18H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1zM4 5v6h5V5H4zm7 0v6h5V5h-5zM5 2v1h10V2H5zm.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                                <span class="text-buca-secondary" style="margin-left: 5px">Bus</span>
                             </a>
                             <div class="collapse " id="tasksCollapse">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="kanban-board.html.htm" class="nav-link ">
+                                        <a href="#" class="nav-link ">
                                             <span class="text-buca-secondary">Listes des Bus</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="task-details.html.htm" class="nav-link ">
+                                        <a href="#" class="nav-link ">
                                             <span class="text-buca-secondary">Ajouter un bus</span>
                                         </a>
                                     </li>
@@ -403,7 +409,7 @@
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="d-flex w-100 justify-content-between">
                                                 <h5 class="mb-1">Kipart</h5>
-                                                <small class="text-muted">il y a 10 minutes</small>
+                                                <small class="text-muted">il y 1 Heure</small>
                                             </div>
 
                                             <div class="d-flex flex-column">
@@ -491,6 +497,61 @@
 
                                         <!-- Title -->
                                         <h5 class="text-uppercase text-muted fw-semibold mb-2">
+                                            Tickets
+                                        </h5>
+
+                                        <!-- Subtitle -->
+                                        <h2 class="mb-0">
+                                            6 328
+                                        </h2>
+                                    </div>
+                                    <div class="col-auto">
+
+                                        <!-- Icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-ticket-detailed text-buca-theme" viewBox="0 0 16 16"> <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z"/> <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"/> </svg>
+                                    </div>
+                                </div> <!-- / .row -->
+                            </div>
+                            <div class="card-footer">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+
+                                        <!-- Label -->
+                                        <p class="fs-6 text-muted text-uppercase mb-0">
+                                            Cette Semaine
+                                        </p>
+
+                                        <!-- Comment -->
+                                        <p class="fs-5 fw-bold mb-0">
+                                            200
+                                        </p>
+                                    </div>
+                                    <div class="col text-end text-truncate">
+
+                                        <!-- Label -->
+                                        <p class="fs-6 text-muted text-uppercase mb-0">
+                                            Mensuel
+                                        </p>
+
+                                        <!-- Comment -->
+                                        <p class="fs-5 fw-bold mb-0">
+                                            1050
+                                        </p>
+                                    </div>
+                                </div> <!-- / .row -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-3 d-flex">
+
+                        <!-- Card -->
+                        <div class="card border-0 flex-fill w-100">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+
+                                        <!-- Title -->
+                                        <h5 class="text-uppercase text-muted fw-semibold mb-2">
                                             Passagers
                                         </h5>
 
@@ -517,7 +578,7 @@
 
                                         <!-- Comment -->
                                         <p class="fs-5 fw-bold mb-0">
-                                            57
+                                            200
                                         </p>
                                     </div>
                                     <div class="col text-end text-truncate">
@@ -529,68 +590,14 @@
 
                                         <!-- Comment -->
                                         <p class="fs-5 fw-bold mb-0">
-                                            681
+                                            1050
                                         </p>
                                     </div>
                                 </div> <!-- / .row -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xxl-3 d-flex">
 
-                        <!-- Card -->
-                        <div class="card border-0 flex-fill w-100">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">
-
-                                        <!-- Title -->
-                                        <h5 class="text-uppercase text-muted fw-semibold mb-2">
-                                            Tickets
-                                        </h5>
-
-                                        <!-- Subtitle -->
-                                        <h2 class="mb-0">
-                                            6 328
-                                        </h2>
-                                    </div>
-                                    <div class="col-auto">
-
-                                        <!-- Icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" height="30" width="30" class="text-buca-theme"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19.1249H15.921C16.2753 19.125 16.6182 18.9996 16.889 18.7709C17.1597 18.5423 17.3407 18.2253 17.4 17.8759L20.037 2.37593C20.0965 2.02678 20.2776 1.70994 20.5483 1.48153C20.819 1.25311 21.1618 1.12785 21.516 1.12793H22.5"></path><path stroke="currentColor" stroke-width="1.5" d="M7.875 22.125C7.66789 22.125 7.5 21.9571 7.5 21.75C7.5 21.5429 7.66789 21.375 7.875 21.375"></path><path stroke="currentColor" stroke-width="1.5" d="M7.875 22.125C8.08211 22.125 8.25 21.9571 8.25 21.75C8.25 21.5429 8.08211 21.375 7.875 21.375"></path><path stroke="currentColor" stroke-width="1.5" d="M15.375 22.125C15.1679 22.125 15 21.9571 15 21.75C15 21.5429 15.1679 21.375 15.375 21.375"></path><path stroke="currentColor" stroke-width="1.5" d="M15.375 22.125C15.5821 22.125 15.75 21.9571 15.75 21.75C15.75 21.5429 15.5821 21.375 15.375 21.375"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.9529 14.6251H5.88193C5.21301 14.625 4.5633 14.4014 4.03605 13.9897C3.5088 13.5781 3.13425 13.002 2.97193 12.3531L1.52193 6.55309C1.49426 6.44248 1.49218 6.32702 1.51583 6.21548C1.53949 6.10394 1.58827 5.99927 1.65846 5.90941C1.72864 5.81955 1.81839 5.74688 1.92089 5.69692C2.02338 5.64696 2.13591 5.62103 2.24993 5.62109H19.4839"></path></svg>
-                                    </div>
-                                </div> <!-- / .row -->
-                            </div>
-                            <div class="card-footer">
-                                <div class="row justify-content-between">
-                                    <div class="col-auto">
-
-                                        <!-- Label -->
-                                        <p class="fs-6 text-muted text-uppercase mb-0">
-                                            Cette Semaine
-                                        </p>
-
-                                        <!-- Comment -->
-                                        <p class="fs-5 fw-bold mb-0">
-                                            57
-                                        </p>
-                                    </div>
-                                    <div class="col text-end text-truncate">
-
-                                        <!-- Label -->
-                                        <p class="fs-6 text-muted text-uppercase mb-0">
-                                            Mensuel
-                                        </p>
-
-                                        <!-- Comment -->
-                                        <p class="fs-5 fw-bold mb-0">
-                                            681
-                                        </p>
-                                    </div>
-                                </div> <!-- / .row -->
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-6 col-xxl-3 d-flex">
 
                         <!-- Card -->
@@ -1141,9 +1148,7 @@
                             © K-SOFT. 2023
                         </div>
 
-                        <div class="col-auto">
-                            v1.3.1
-                        </div>
+
                     </div> <!-- / .row -->
                 </div>
             </footer>
