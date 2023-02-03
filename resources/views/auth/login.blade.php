@@ -175,7 +175,7 @@
                                     </label>
 
                                     <!-- Input -->
-                                    <input type="email" class="form-control" placeholder="Your email address">
+                                    <input type="email" class="form-control" placeholder="Votre Adresse Email">
                                 </div>
                             </div>
 
@@ -195,13 +195,13 @@
                                         <div class="col-auto">
 
                                             <!-- Help text -->
-                                            <a href="reset-password-illustration.html.htm" class="form-text small text-muted link-primary">Forgot password</a>
+                                            <a href="#" class="form-text small text-muted link-primary">Mot de passe Oublié</a>
                                         </div>
                                     </div> <!-- / .row -->
 
                                     <!-- Input -->
                                     <div class="input-group input-group-merge">
-                                        <input type="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Your password">
+                                        <input type="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Votre Mot de passe">
 
                                         <button type="button" class="input-group-text px-4 text-secondary link-primary" data-toggle-password=""></button>
                                     </div>
