@@ -1112,9 +1112,22 @@
             <div class="container-fluid">
 
                 <!-- Title -->
-                <h1 class="h2">
-                    Ticketing
-                </h1>
+                <div class="row mb-3">
+                    <div class="col-9">
+                        <h1 class="h2">
+                            Ticketing
+
+                        </h1>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn buca-color ms-md-4" data-bs-toggle="modal" data-bs-target="#createKeyModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
+                            Ajouter un Passager
+                        </button>
+                    </div>
+
+                </div>
+
 
                 <div class="row">
                     <div class="col-lg-6 col-xxl-3 d-flex">
@@ -1345,27 +1358,27 @@
                                         <tr>
                                             <th>
                                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                                                    Name
+                                                    Nom
                                                 </a>
                                             </th>
                                             <th class="text-end">
                                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="price">
-                                                    Price
+                                                    Depart
                                                 </a>
                                             </th>
                                             <th class="text-end">
                                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="quantity">
-                                                    Quantity
+                                                    Arrivée
                                                 </a>
                                             </th>
                                             <th class="text-end">
                                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="amount">
-                                                    Amount
+                                                    Prix
                                                 </a>
                                             </th>
                                             <th class="text-end pe-7 min-w-200px">
                                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="sales">
-                                                    Sales
+                                                    Classe de Voyage
                                                 </a>
                                             </th>
                                         </tr>
@@ -1373,73 +1386,48 @@
 
                                     <tbody class="list">
                                         <tr>
-                                            <td class="name fw-bold">iPad Air</td>
-                                            <td class="price text-end">$599</td>
-                                            <td class="quantity text-end">135</td>
-                                            <td class="amount text-end">$80,865</td>
+                                            <td class="name fw-bold">Martin Lunel</td>
+                                            <td class="price text-end">Douala</td>
+                                            <td class="quantity text-end">Yaoundé</td>
+                                            <td class="amount text-end">4000</td>
                                             <td class="sales" data-sales="81">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="progress d-flex flex-grow-1">
-                                                        <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <span class="ms-3 text-muted">81%</span>
-                                                </div>
+                                                VIP
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="name fw-bold">iPhone SE</td>
-                                            <td class="price text-end">$499</td>
-                                            <td class="quantity text-end">127</td>
-                                            <td class="amount text-end">$63,373</td>
-                                            <td class="sales" data-sales="25">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="progress w-100">
-                                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <span class="ms-3 text-muted">25%</span>
-                                                </div>
+                                            <td class="name fw-bold">Franck</td>
+                                            <td class="price text-end">Douala</td>
+                                            <td class="quantity text-end">Yaoundé</td>
+                                            <td class="amount text-end">2500</td>
+                                            <td class="sales" data-sales="81">
+                                                Classique
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="name fw-bold">Nexus 3</td>
-                                            <td class="price text-end">$349</td>
-                                            <td class="quantity text-end">98</td>
-                                            <td class="amount text-end">$34,202</td>
-                                            <td class="sales" data-sales="41">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="progress w-100">
-                                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <span class="ms-3 text-muted">41%</span>
-                                                </div>
+                                            <td class="name fw-bold">Achille</td>
+                                            <td class="price text-end">Douala</td>
+                                            <td class="quantity text-end">Yaoundé</td>
+                                            <td class="amount text-end">2500</td>
+                                            <td class="sales" data-sales="81">
+                                                classique
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="name fw-bold">Apple watch series-6</td>
-                                            <td class="price text-end">$599</td>
-                                            <td class="quantity text-end">214</td>
-                                            <td class="amount text-end">$128,186</td>
-                                            <td class="sales" data-sales="62">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="progress w-100">
-                                                        <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <span class="ms-3 text-muted">62%</span>
-                                                </div>
+                                            <td class="name fw-bold">Theresa</td>
+                                            <td class="price text-end">Douala</td>
+                                            <td class="quantity text-end">Yaoundé</td>
+                                            <td class="amount text-end">2500</td>
+                                            <td class="sales" data-sales="81">
+                                                classique
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="name fw-bold">Apple TV 4K</td>
-                                            <td class="price text-end">$1200</td>
-                                            <td class="quantity text-end">51</td>
-                                            <td class="amount text-end">$61,200</td>
-                                            <td class="sales" data-sales="36">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="progress w-100">
-                                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <span class="ms-3 text-muted">36%</span>
-                                                </div>
+                                            <td class="name fw-bold">Lisa</td>
+                                            <td class="price text-end">Douala</td>
+                                            <td class="quantity text-end">Yaoundé</td>
+                                            <td class="amount text-end">4000</td>
+                                            <td class="sales" data-sales="81">
+                                                VIP
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1455,12 +1443,12 @@
 
                                 <!-- Title -->
                                 <h2 class="card-header-title h4 text-uppercase">
-                                    Tickets recents
+                                    Tickets vendus recemment
                                 </h2>
 
                                 <!-- Link -->
                                 <a href="javascript: void(0);" class="small fw-bold">
-                                    View all
+                                    Voir tout
                                 </a>
                             </div>
 
@@ -1469,8 +1457,8 @@
                                 <table class="table table-sm table-borderless align-middle mb-0">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th>Name</th>
-                                            <th class="text-end">Price</th>
+                                            <th>Passager</th>
+                                            <th class="text-end">Code Qr</th>
                                         </tr>
                                     </thead>
 
@@ -1478,86 +1466,76 @@
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-circle avatar-xs me-2">
-                                                        <img src="790b7dd581a3ac4fd0410afad0fb12c6e93c9e7a/b0657/assets/images/profiles/profile-07.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                    </div>
+
 
                                                     <div class="d-flex flex-column">
-                                                        <span class="fw-bold d-block">Lester William</span>
-                                                        <span class="fs-6 text-muted">24 minutes ago</span>
+                                                        <span class="fw-bold d-block">Martin Lunel</span>
+                                                        <span class="fs-6 text-muted">il y a 24 minutes</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="text-end">
-                                                <div class="fw-bold">$99</div>
+                                                <img src="{{asset('assets/svg/qr.svg')}}" width="55" height="55" class="img-fluid" alt="...">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-circle avatar-xs me-2">
-                                                        <img src="5e2b51ec857b6e9866574263391803f159c8081e/29577/assets/images/profiles/profile-02.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                    </div>
+
 
                                                     <div class="d-flex flex-column">
-                                                        <span class="fw-bold d-block">Gabriella Fletcher</span>
-                                                        <span class="fs-6 text-muted">3 hours ago</span>
+                                                        <span class="fw-bold d-block">Franck</span>
+                                                        <span class="fs-6 text-muted">il y a 3 Heures</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="text-end">
-                                                <div class="fw-bold">$59</div>
+                                                <img src="{{asset('assets/svg/qr.svg')}}" width="55" height="55" class="img-fluid" alt="...">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-circle avatar-xs me-2">
-                                                        <img src="4b8c918c73e2c72876e4bd4ba8c89401bae69d14/5923c/assets/images/profiles/profile-03.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                    </div>
+
 
                                                     <div class="d-flex flex-column">
-                                                        <span class="fw-bold d-block">Marcia Banks</span>
-                                                        <span class="fs-6 text-muted">9 hours ago</span>
+                                                        <span class="fw-bold d-block">Achille</span>
+                                                        <span class="fs-6 text-muted">il y'a 9 Heures</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="text-end">
-                                                <div class="fw-bold">$499</div>
+                                                <img src="{{asset('assets/svg/qr.svg')}}" width="55" height="55" class="img-fluid" alt="...">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-circle avatar-xs me-2">
-                                                        <img src="eec1f115f0af81936bbe3a4f4a4d043cd3c0e7e4/34439/assets/images/profiles/profile-09.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                    </div>
+
 
                                                     <div class="d-flex flex-column">
-                                                        <span class="fw-bold d-block">Irina Garcia</span>
-                                                        <span class="fs-6 text-muted">17 hours ago</span>
+                                                        <span class="fw-bold d-block">Theresa</span>
+                                                        <span class="fs-6 text-muted">il y a 17 Heures</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="text-end">
-                                                <div class="fw-bold">$149</div>
+                                                <img src="{{asset('assets/svg/qr.svg')}}" width="55" height="55" class="img-fluid" alt="...">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar avatar-circle avatar-xs me-2">
-                                                        <img src="102e41d9e1988e0849ecfe402b1d46f4efd3574b/8dc2e/assets/images/profiles/profile-12.jpeg" alt="..." class="avatar-img" width="30" height="30">
-                                                    </div>
+
 
                                                     <div class="d-flex flex-column">
-                                                        <span class="fw-bold d-block">Javier Griffin</span>
-                                                        <span class="fs-6 text-muted">1 day ago</span>
+                                                        <span class="fw-bold d-block">Lisa</span>
+                                                        <span class="fs-6 text-muted">il y a 1 jour</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="text-end">
-                                                <div class="fw-bold">$125</div>
+                                                <img src="{{asset('assets/svg/qr.svg')}}" width="55" height="55" class="img-fluid" alt="...">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1568,9 +1546,11 @@
                 </div> <!-- / .row -->
 
                 <div class="row">
+
                     <div class="col-xxl-6 d-flex">
 
                         <!-- Card -->
+
                         <div class="card border-0 flex-fill w-100">
                             <div class="card-header border-0 card-header-space-between">
 
