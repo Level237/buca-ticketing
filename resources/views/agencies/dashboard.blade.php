@@ -165,7 +165,7 @@
             <div class="container-fluid">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html.htm">
+                <a class="navbar-brand" href="#">
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-small" alt="..." width="19" height="25">
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="125" height="25">
 
