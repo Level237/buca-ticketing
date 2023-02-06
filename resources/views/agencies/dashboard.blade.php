@@ -165,7 +165,7 @@
             <div class="container-fluid">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html.htm">
+                <a class="navbar-brand" href="{{route('dashboard')}}">
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-small" alt="..." width="19" height="25">
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="125" height="25">
 
@@ -469,15 +469,15 @@
             <div class="container-fluid">
 
                 <!-- Title -->
-                <div class="row mb-3">
-                    <div class="col-9">
+                <div class="row mb-3 align-items-center">
+                    <div class="col-6 col-lg-9">
                         <h1 class="h2">
                             Ticketing
 
                         </h1>
                     </div>
-                    <div class="col-3">
-                        <button type="button" class="btn buca-color ms-md-4" data-bs-toggle="modal" data-bs-target="#createKeyModal">
+                    <div class="col-6 col-lg-3">
+                        <button type="button" class="btn buca-color p-2" data-bs-toggle="modal" data-bs-target="#createKeyModal" style="padding-left:22px;padding-right:12px">
                             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
                             Ajouter un Ticket
                         </button>
@@ -613,7 +613,7 @@
 
                                         <!-- Subtitle -->
                                         <h2 class="mb-0">
-                                            50 500 FCFA
+                                            1 250 300 Fcfa
                                         </h2>
                                     </div>
                                     <div class="col-auto">
@@ -634,7 +634,7 @@
 
                                         <!-- Comment -->
                                         <p class="fs-5 fw-bold mb-0">
-                                           12 500 Fcfa
+                                           10 550 000 Fcfa
                                         </p>
                                     </div>
                                     <div class="col text-end text-truncate">
@@ -646,7 +646,7 @@
 
                                         <!-- Comment -->
                                         <p class="fs-5 fw-bold mb-0">
-                                            400 000 Fcfa
+                                            50 450 000 Fcfa
                                         </p>
                                     </div>
                                 </div> <!-- / .row -->
@@ -666,7 +666,7 @@
 
                                 <!-- Subtitle -->
                                 <h2 class="mb-0">
-                                    1 440 000 Fcfa
+                                    100 440 000 Fcfa
                                 </h2>
 
                                 <!-- Chart -->
