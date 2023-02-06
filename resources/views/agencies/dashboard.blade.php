@@ -165,11 +165,7 @@
             <div class="container-fluid">
 
                 <!-- Brand -->
-<<<<<<< HEAD
                 <a class="navbar-brand" href="{{route('dashboard')}}">
-=======
-                <a class="navbar-brand" href="#">
->>>>>>> 945f798f6b1ac4f2ca46efdde5d92b3472fce4f9
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-small" alt="..." width="19" height="25">
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="125" height="25">
 
