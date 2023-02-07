@@ -164,7 +164,8 @@
                     </p>
 
                     <!-- Form -->
-                    <form>
+                    <form action='{{route('login')}}' method="post">
+                    @csrf
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-4">
@@ -175,7 +176,7 @@
                                     </label>
 
                                     <!-- Input -->
-                                    <input type="email" class="form-control" placeholder="Votre Adresse Email">
+                                    <input type="email" name="email" class="form-control" placeholder="Votre Adresse Email">
                                 </div>
                             </div>
 
@@ -201,7 +202,7 @@
 
                                     <!-- Input -->
                                     <div class="input-group input-group-merge">
-                                        <input type="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Votre Mot de passe">
+                                        <input type="password" name="password" class="form-control" autocomplete="off" data-toggle-password-input="" placeholder="Votre Mot de passe">
 
                                         <button type="button" class="input-group-text px-4 text-secondary link-primary" data-toggle-password=""></button>
                                     </div>
@@ -224,7 +225,7 @@
                             <div class="col-12">
 
                                 <!-- Button -->
-                                <button type="button" class="btn w-100 buca-color mt-6 mb-2">Connectez-vous</button>
+                                <button type="submit" class="btn w-100 buca-color mt-6 mb-2">Connectez-vous</button>
                             </div>
 
                             <div class="col-12">

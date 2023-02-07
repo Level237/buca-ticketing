@@ -20,7 +20,8 @@ Route::get('/d', function () {
     return view('welcome');
 });
 
-Route::get('/',[LoginController::class,'login'])->name('login');
+Route::get('/',[LoginController::class,'index'])->name('login');
+Route::post('/',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
 Route::get('bordereau',[TicketController::class,'index'])->name('bordereau');
