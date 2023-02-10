@@ -211,7 +211,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{route('dashboard')}}">
+                            <a class="nav-link" href="{{route('bordereau')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
                                 <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Bordereau</span>
                             </a>
@@ -459,7 +459,12 @@
 
                             <hr class="dropdown-divider">
 
-                            <a class="dropdown-item" href="javascript: void(0);">Deconnexion</a>
+                            <form method="POST" action="{{ route('logout') }}" id="logout">
+                                @csrf
+                            </form>
+                            <a href="" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout').submit();" title="Sign Out">
+                Deconnexion
+            </a>
                         </div>
                     </div>
                 </div>
@@ -562,9 +567,10 @@
                                             <span class="name fw-bold">Martin Lunel</span>
                                         </td>
                                         <td>#245</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-
+                                        <td>2500</td>
+                                        <td></td>
+                                        <td>3000</td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -579,9 +585,10 @@
                                             <span class="name fw-bold">Franck</span>
                                         </td>
                                         <td>#246</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+
+                                        <td>500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                     </tr>
                                     <tr>
@@ -597,9 +604,9 @@
                                             <span class="name fw-bold">Bertrand</span>
                                         </td>
                                         <td>#247</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>250</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -615,9 +622,9 @@
                                             <span class="name fw-bold">Samantha</span>
                                         </td>
                                         <td>#248</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>1500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -633,9 +640,9 @@
                                             <span class="name fw-bold">Hervé</span>
                                         </td>
                                         <td>#249</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>2500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                     </tr>
                                     <tr>
@@ -651,9 +658,9 @@
                                             <span class="name fw-bold">Linda</span>
                                         </td>
                                         <td>#250</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>250</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -669,9 +676,9 @@
                                             <span class="name fw-bold">Clementine</span>
                                         </td>
                                         <td>#251</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>2500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                     </tr>
                                     <tr>
@@ -687,9 +694,9 @@
                                             <span class="name fw-bold">Berlin</span>
                                         </td>
                                         <td>#252</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>2500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                     </tr>
                                     <tr>
@@ -705,9 +712,9 @@
                                             <span class="name fw-bold">Lisa</span>
                                         </td>
                                         <td>#253</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>300</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -723,9 +730,9 @@
                                             <span class="name fw-bold">Merveille</span>
                                         </td>
                                         <td>#254</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -741,9 +748,9 @@
                                             <span class="name fw-bold">Dimitri</span>
                                         </td>
                                         <td>#255</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>250</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                     </tr>
                                     <tr>
@@ -759,9 +766,9 @@
                                             <span class="name fw-bold">adrien</span>
                                         </td>
                                         <td>#256</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>2500</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
                                     <tr>
@@ -777,9 +784,9 @@
                                             <span class="name fw-bold">Edie</span>
                                         </td>
                                         <td>#257</td>
-                                        <td>Douala</td>
-                                        <td>Yaoundé</td>
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td>250</td>
+                                        <td></td>
+                                        <td>3000</td>
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     </tr>
 

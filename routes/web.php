@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\BordereauController;
+use App\Http\Controllers\auth\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,5 @@ Route::get('/',[LoginController::class,'index'])->name('login');
 Route::post('/',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
-Route::get('bordereau',[TicketController::class,'index'])->name('bordereau');
+Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
+Route::post('logout',[LogoutController::class,'logout'])->name('logout');
