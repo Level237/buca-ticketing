@@ -34,14 +34,19 @@ class LoginController extends Controller
         $d=json_decode($detailSubAgency->getBody());
             foreach($d as $datas){
                 foreach($datas as $data){
-                    array_push($arrayDetailsSubAgency,$data->id);
-                    array_push($arrayDetailsSubAgency,$data->nom);
-                    array_push($arrayDetailsSubAgency,$url."/".$data->logo);
-                    array_push($arrayDetailsSubAgency,$data->localisation);
+                    $arrayDetailsSubAgency=[
+                        'id'=>$data->id,
+                        'nom'=>$data->nom,
+                        'logo'=>$data->logo,
+                        'agency_id'=>$data->agency_id,
+                        'localisation'=>$data->localisation,
+                    ];
+
                 }
             }
             Session::put('details', $arrayDetailsSubAgency);
             Session::save();
+
             return to_route('dashboard');
             //return $arrayDetailsSubAgency;
         }

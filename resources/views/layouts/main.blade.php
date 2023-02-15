@@ -170,7 +170,7 @@
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="125" height="25">
 
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-small" alt="..." width="19" height="25">
-                    <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-large" alt="..." width="70" height="70"> <span style="color:white">Buca Voyage Douala</span>
+                    <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-large" alt="..." width="70" height="70"> <span style="color:white">{{ $details['nom'] }}</span>
                 </a>
 
                 <!-- Navbar toggler -->
@@ -474,21 +474,6 @@
             <div class="container-fluid">
 
                 <!-- Title -->
-                <div class="row mb-3 align-items-center">
-                    <div class="col-6 col-lg-9">
-                        <h1 class="h2">
-                            Ticketing
-
-                        </h1>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <button type="button" class="btn buca-color p-2" data-bs-toggle="modal" data-bs-target="#createKeyModal" style="padding-left:22px;padding-right:12px">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                            Ajouter un Ticket
-                        </button>
-                    </div>
-
-                </div>
 
 
                @yield('content')

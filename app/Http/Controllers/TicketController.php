@@ -14,6 +14,6 @@ class TicketController extends Controller
 
     public function store(Request $request,$travel_id){
 
-        $response=(new AddTicketServices())->addTicket()
+        //$response=(new AddTicketServices())->addTicket();
     }
 }
