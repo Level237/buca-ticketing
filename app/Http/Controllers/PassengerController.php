@@ -23,7 +23,7 @@ class PassengerController extends Controller
         $date=$request->date;
         $classe=$request->classe;
         $hours=$request->hours;
-
+        request()->fullUrlWithoutQuery('departure');
         $travel_id=Session::get('travel_id');
         $response=(new ListTicketServices())->list($travel_id);
         $datas=json_decode($response->getBody());

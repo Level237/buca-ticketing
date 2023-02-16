@@ -9,9 +9,19 @@ Ajouter un Passager
 <div class="container-fluid d-flex flex-column flex-grow-1">
 
     <!-- Title -->
-    <h1 class="h2">
-        Voyage du {{ $date}} de classe {{ $classe }} à {{ $hours }}
-    </h1>
+    <div class="row align-items-center">
+        <div class="col-6">
+            <h1 class="h2">
+                Voyage du {{ $date}} de classe {{ $classe }} à {{ $hours }}
+            </h1>
+        </div>
+        <div class="col-6">
+            <div class="alert buca-color" role="alert">
+                 nombre de places restantes
+            </div>
+        </div>
+    </div>
+
     @if(session('success'))
     <div class="alert buca-color" role="alert">
         {{ session('success') }}
@@ -72,11 +82,7 @@ Ajouter un Passager
                                                 Numero de place
                                             </a>
                                         </th>
-                                        <th class="w-150px min-w-150px">
-                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                                Code Qr
-                                            </a>
-                                        </th>
+
                                         <th class="w-150px min-w-150px">
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
                                                 Etat de Vente
@@ -98,21 +104,32 @@ Ajouter un Passager
                                         @foreach ($ticket->Passager as $passager)
 
 
-                                        <td>
-                                            <div class="avatar avatar-circle avatar-xs me-2">
-                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
-                                            </div>
+                                                <td>
+                                                    @if($passager=="Homme")
+                                                        <div class="avatar avatar-circle avatar-xs me-2">
+                                                            <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                                        </div>
+                                                    @else
+                                                        <div class="avatar avatar-circle avatar-xs me-2">
+                                                            <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                                        </div>
+                                                    @endif
 
-                                        </td>
-                                        <td>{{ $passager->id }}</td>
-                                        <td>{{ $passager->nom }}</td>
-                                        <td>{{ $passager->cniNumber }}</td>
-                                        <td>{{ $passager->seatNumber }}</td>
-                                        @endforeach
-                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
-                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+
+                                                </td>
+                                                <td>{{ $passager->id }}</td>
+                                                <td>{{ $passager->nom }}</td>
+                                                <td>{{ $passager->cniNumber }}</td>
+                                                <td>{{ $passager->seatNumber }}</td>
+                                                @if($passenger->type==0)
+                                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                                    @else
+                                                    <td class="status"><span class="legend-circle bg-secondary"></span>Kipart</td>
+                                                @endif
+
+
                                     </tr>
-
+                                    @endforeach
                                     @empty
 
                                     <tr>
