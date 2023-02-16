@@ -99,7 +99,7 @@ Choisissez un voyage
                                     </label>
                                 </div>
                                 <div>
-                                    <form method="Post" action="{{ route('passenger.index') }}" id="search">
+                                    <form method="get" action="{{ route('passenger.index') }}" id="search">
                                         @csrf
                                         <input type="hidden" name="travel_id" value="{{ $datas->id }}">
                                     </form>

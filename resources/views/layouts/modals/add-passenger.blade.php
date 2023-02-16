@@ -3,7 +3,7 @@
         <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <form class="needs-validation" method="Post" action="{{ route('passenger.create') }}" novalidate="" id="eventForm">
+                    <form class="needs-validation" method="POST" action="{{ route('passenger.create') }}" novalidate="" id="eventForm">
 
                         @csrf
                         <!-- Header -->

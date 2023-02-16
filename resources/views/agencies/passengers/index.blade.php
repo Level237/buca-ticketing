@@ -12,7 +12,11 @@ Ajouter un Passager
     <h1 class="h2">
         Passager
     </h1>
-
+    @if(session('success'))
+    <div class="alert alert-primary" role="alert">
+        {{ session('success') }}
+    </div>
+    @endif
     <div class="row flex-md-grow-1">
         <div class="col d-flex">
 
