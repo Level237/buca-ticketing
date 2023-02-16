@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\services\Api\ticketing\tickets\AddTicketServices;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\services\Api\ticketing\tickets\AddTicketServices;
+use App\services\Api\ticketing\tickets\ListTicketServices;
 
 class PassengerController extends Controller
 {
@@ -12,6 +13,7 @@ class PassengerController extends Controller
 
         $details=Session::get('details');
         $request->session()->put('travel_id',$request->travel_id);
+        $travel_id=$request->session()->get('travel_id');
         // $request->session()->put('departure',$request->departure);
         // $request->session()->put('arrival',$request->arrival);
         // $request->session()->put('date',$request->date);
@@ -21,7 +23,12 @@ class PassengerController extends Controller
         $date=$request->date;
         $classe=$request->classe;
         $hours=$request->hours;
-        return view('agencies.passengers.index',compact('details','arrival','date','classe','departure','hours'));
+
+        $travel_id=Session::get('travel_id');
+        $response=(new ListTicketServices())->list($travel_id);
+        $datas=json_decode($response->getBody());
+        //return $datas;
+        return view('agencies.passengers.index',compact('details','arrival','date','classe','departure','hours','datas'));
     }
 
     public function store(Request $request){
@@ -29,7 +36,9 @@ class PassengerController extends Controller
         $travel_id=Session::get('travel_id');
         $sub_agency_id=Session::get('details');
         $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id']);
+        $response=(new ListTicketServices())->list($travel_id);
+        $datas=json_decode($response->getBody());
 
-        return to_route('passenger.index')->with('success','Passager ajouté avec success');
+        return to_route('passenger.index',compact('datas'))->with('success','Passager ajouté avec success');
     }
 }

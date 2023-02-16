@@ -86,6 +86,7 @@ Choisissez un voyage
                                                         </span>
                                                     </span>
                                                 </span>
+
                                                 <form method="get" action="{{ route('passenger.index') }}" id="search">
                                                     @csrf
 
@@ -109,6 +110,7 @@ Choisissez un voyage
                                                 </span>
 
                                             </form>
+
                                             </span>
                                         </span>
                                     </label>
