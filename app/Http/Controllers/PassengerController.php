@@ -36,9 +36,8 @@ class PassengerController extends Controller
         $travel_id=Session::get('travel_id');
         $sub_agency_id=Session::get('details');
         $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id']);
-        $response=(new ListTicketServices())->list($travel_id);
-        $datas=json_decode($response->getBody());
 
-        return to_route('passenger.index',compact('datas'))->with('success','Passager ajouté avec success');
+
+        return redirect()->back()->with('success','Passager ajouté avec success');
     }
 }

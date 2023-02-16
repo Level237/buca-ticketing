@@ -88,7 +88,7 @@ Choisissez un voyage
                                                 </span>
 
                                                 <form method="get" action="{{ route('passenger.index') }}" id="search">
-                                                    @csrf
+
 
                                         <input type="hidden" name="travel_id" value="{{ $datas->id }}">
                                         <input type="hidden" name="departure" value="{{ $datas->departure }}">
