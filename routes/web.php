@@ -7,6 +7,7 @@ use App\Http\Controllers\BordereauController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\LogoutController;
+use App\Http\Controllers\PassengerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,6 @@ Route::post('/',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
-Route::get('list/travels',[TravelController::class,'list'])->name('travel.index');
-
+Route::get('tickets/step-one/listTravels',[TravelController::class,'list'])->name('travel.index');
+Route::post('tickets/step-two/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');
 Route::post('logout',[LogoutController::class,'logout'])->name('logout');

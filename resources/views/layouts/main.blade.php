@@ -500,5 +500,5 @@
 
         <!-- JAVASCRIPT-->
         <!-- Theme JS -->
-        <script src="{{asset('assets/js/bundle.js')}}"></script>    </body>    </body>
+        <script src="{{asset('assets/js/bundle.js')}}"></script>    </body>
 </html>

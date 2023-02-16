@@ -17,8 +17,8 @@ Choisissez un voyage
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Connect Apps</li>
+                <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Listes des voyages</li>
             </ol>
         </nav>
     </div>
@@ -70,7 +70,7 @@ Choisissez un voyage
 
                                         <span class="form-state-active">
 
-                                            <span class="card shadow-sm border-primary">
+                                            <span class="card shadow-sm buca-border">
                                                 <span class="card-body">
                                                     <span class="d-flex justify-content-between">
                                                         <span class="d-flex align-items-center">
@@ -88,8 +88,8 @@ Choisissez un voyage
 
                                                 <span class="card-footer p-0">
                                                     <!-- Button -->
-                                                    <a href="{{ route('tickets.index') }}">
-                                                    <span class="btn text-bg-primary d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
+                                                    <a href="{{ route('tickets.index') }}" onclick="event.preventDefault(); document.getElementById('search').submit();">
+                                                    <span class="btn buca-color d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
                                                         Selectionner
                                                     </span>
                                                 </a>
@@ -99,7 +99,7 @@ Choisissez un voyage
                                     </label>
                                 </div>
                                 <div>
-                                    <form method="POST" action="{{ route('logout') }}" id="search">
+                                    <form method="Post" action="{{ route('passenger.index') }}" id="search">
                                         @csrf
                                         <input type="hidden" name="travel_id" value="{{ $datas->id }}">
                                     </form>
