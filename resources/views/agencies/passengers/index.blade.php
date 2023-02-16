@@ -30,9 +30,289 @@ Ajouter un Passager
 
                         </div>
 
-                        <div class="col d-flex">
-                            <div id="fullcalendar" class="flex-grow-1 min-h-500px"></div>
-                        </div>
+                         <!-- Table -->
+                         <div class="table-responsive">
+                            <table class="table align-middle table-edge table-hover table-nowrap mb-0">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th class="w-60px">
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkAllCheckboxes">
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
+                                                Nom du Passager
+                                            </a>
+                                        </th>
+
+                                        <th>
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
+                                                Id Passager
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
+                                                Depart
+                                            </a>
+                                        </th>
+                                        <th class="w-150px min-w-150px">
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
+                                                Arrivée
+                                            </a>
+                                        </th>
+                                        <th class="w-150px min-w-150px">
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
+                                                Code Qr
+                                            </a>
+                                        </th>
+                                        <th class="w-150px min-w-150px">
+                                            <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
+                                                Etat de Vente
+                                            </a>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="list">
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Martin Lunel</span>
+                                        </td>
+                                        <td>#245</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Franck</span>
+                                        </td>
+                                        <td>#246</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Bertrand</span>
+                                        </td>
+                                        <td>#247</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Samantha</span>
+                                        </td>
+                                        <td>#248</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Hervé</span>
+                                        </td>
+                                        <td>#249</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Linda</span>
+                                        </td>
+                                        <td>#250</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Clementine</span>
+                                        </td>
+                                        <td>#251</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Berlin</span>
+                                        </td>
+                                        <td>#252</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Lisa</span>
+                                        </td>
+                                        <td>#253</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-female.png')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Merveille</span>
+                                        </td>
+                                        <td>#254</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Dimitri</span>
+                                        </td>
+                                        <td>#255</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">adrien</span>
+                                        </td>
+                                        <td>#256</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar avatar-circle avatar-xs me-2">
+                                                <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
+                                            </div>
+                                            <span class="name fw-bold">Edie</span>
+                                        </td>
+                                        <td>#257</td>
+                                        <td>Douala</td>
+                                        <td>Yaoundé</td>
+                                        <td> <img src="{{asset('assets/svg/qr.svg')}}" alt="..." class="avatar-img" width="50" height="50"></td>
+                                        <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div> <!-- / .table-responsive -->
                     </div> <!-- / .row -->
                 </div>
             </div>

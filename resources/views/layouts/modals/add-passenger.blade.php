@@ -3,7 +3,9 @@
         <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <form class="needs-validation" novalidate="" id="eventForm">
+                    <form class="needs-validation" method="Post" action="{{ route('passenger.create') }}" novalidate="" id="eventForm">
+
+                        @csrf
                         <!-- Header -->
                         <div class="modal-header pb-0">
                             <h3 id="eventModalTitle" class="modal-title">Ajouter un nouveau Passager</h3>

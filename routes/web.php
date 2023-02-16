@@ -31,4 +31,5 @@ Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.inde
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
 Route::get('tickets/step-one/listTravels',[TravelController::class,'list'])->name('travel.index');
 Route::post('tickets/step-two/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');
+Route::post('tickets/create,',[PassengerController::class,'store'])->name('passenger.create');
 Route::post('logout',[LogoutController::class,'logout'])->name('logout');
