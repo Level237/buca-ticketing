@@ -12,7 +12,16 @@ class PassengerController extends Controller
 
         $details=Session::get('details');
         $request->session()->put('travel_id',$request->travel_id);
-        return view('agencies.passengers.index',compact('details'));
+        // $request->session()->put('departure',$request->departure);
+        // $request->session()->put('arrival',$request->arrival);
+        // $request->session()->put('date',$request->date);
+        // $request->session()->put('classe',$request->classe);
+        $arrival=$request->arrival;
+        $departure=$request->departure;
+        $date=$request->date;
+        $classe=$request->classe;
+        $hours=$request->hours;
+        return view('agencies.passengers.index',compact('details','arrival','date','classe','departure','hours'));
     }
 
     public function store(Request $request){

@@ -10,10 +10,10 @@ Ajouter un Passager
 
     <!-- Title -->
     <h1 class="h2">
-        Passager
+        Voyage du {{ $date}} de classe {{ $classe }} à {{ $hours }}
     </h1>
     @if(session('success'))
-    <div class="alert alert-primary" role="alert">
+    <div class="alert buca-color" role="alert">
         {{ session('success') }}
     </div>
     @endif

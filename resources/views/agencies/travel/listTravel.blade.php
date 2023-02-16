@@ -37,6 +37,7 @@ Choisissez un voyage
                             <div class="row">
                             @foreach ($listTravel as $datas)
                             <div class="col-sm-6 col-xxl-4">
+
                                 <div class="form-check form-state-switch w-100">
                                     <input class="form-state-input" type="radio" name="platforms" id={{ $datas->id }}>
                                     <label class="form-state-label w-100" for={{ $datas->id }}>
@@ -85,24 +86,36 @@ Choisissez un voyage
                                                         </span>
                                                     </span>
                                                 </span>
+                                                <form method="get" action="{{ route('passenger.index') }}" id="search">
+                                                    @csrf
+
+                                        <input type="hidden" name="travel_id" value="{{ $datas->id }}">
+                                        <input type="hidden" name="departure" value="{{ $datas->departure }}">
+                                        <input type="hidden" name="arrival" value="{{ $datas->arrival }}">
+                                        <input type="hidden" name="date" value="{{ $datas->date }}">
+                                        <input type="hidden" name="classe" value="{{ $datas->classe }}">
+                                        <input type="hidden" name="hours" value="{{ $datas->hours }}">
 
                                                 <span class="card-footer p-0">
                                                     <!-- Button -->
-                                                    <a href="{{ route('tickets.index') }}" onclick="event.preventDefault(); document.getElementById('search').submit();">
-                                                    <span class="btn buca-color d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
-                                                        Selectionner
-                                                    </span>
-                                                </a>
+                                                    <button type="submit" class="btn buca-color d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
+
+                                                            Selectionner
+
+                                                    </button>
+
+
+
                                                 </span>
+
+                                            </form>
                                             </span>
                                         </span>
                                     </label>
                                 </div>
                                 <div>
-                                    <form method="get" action="{{ route('passenger.index') }}" id="search">
-                                        @csrf
-                                        <input type="hidden" name="travel_id" value="{{ $datas->id }}">
-                                    </form>
+
+
                                 </div>
                             </div>
 
