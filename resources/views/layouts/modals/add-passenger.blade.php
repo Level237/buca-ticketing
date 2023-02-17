@@ -35,12 +35,16 @@
                                 <div class="invalid-feedback">s'il vous plait selectionnez le type de Passager</div>
                             </div>
                             <div class="mb-3">
-                                <label for="location" class="form-label">cni</label>
+                                <label for="location" class="form-label">CNI</label>
                                 <input type="text" name="cni" class="form-control" id="location" placeholder="Entrer le cni du passager">
                             </div>
                             <div class="mb-3">
                                 <label for="location" class="form-label">Numero de telephone</label>
                                 <input type="text" name="telephone" class="form-control" id="location" placeholder="Entrer le numero de telephone du passager">
+                            </div>
+                              <div class="mb-3">
+                                <label for="location" class="form-label">Montant Deposé</label>
+                                <input type="text" name="amount" class="form-control" id="location" placeholder="Entrer le montant deposé par le passager">
                             </div>
 
                         </div>

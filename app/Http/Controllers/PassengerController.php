@@ -13,6 +13,7 @@ class PassengerController extends Controller
 
         $details=Session::get('details');
         $request->session()->put('travel_id',$request->travel_id);
+        $request->session()->put('travel_price',$request->travel_price);
         $travel_id=$request->session()->get('travel_id');
         // $request->session()->put('departure',$request->departure);
         // $request->session()->put('arrival',$request->arrival);
@@ -35,7 +36,9 @@ class PassengerController extends Controller
 
         $travel_id=Session::get('travel_id');
         $sub_agency_id=Session::get('details');
-        $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id']);
+        $price=$request->session()->get('travel_price');
+        $amountReimbursed=$request->amount-$price;
+        $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id'],$price,$amountReimbursed);
 
 
         return redirect()->back()->with('success','Passager ajouté avec success');

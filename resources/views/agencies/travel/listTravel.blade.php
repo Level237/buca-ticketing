@@ -96,7 +96,7 @@ Choisissez un voyage
                                         <input type="hidden" name="date" value="{{ $datas->date }}">
                                         <input type="hidden" name="classe" value="{{ $datas->classe }}">
                                         <input type="hidden" name="hours" value="{{ $datas->hours }}">
-
+                                        <input type="hidden" name="travel_price" value="{{ $datas->price }}">
                                                 <span class="card-footer p-0">
                                                     <!-- Button -->
                                                     <button type="submit" class="btn buca-color d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
