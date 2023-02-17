@@ -88,7 +88,7 @@
             }
         </script>
         <!-- Favicon -->
-        <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+        <link rel="icon" href="{{ asset('assets/img/buca.jpg') }}" sizes="any">
 
         <!-- Page Title -->
         <title>Buca Ticketing</title>
