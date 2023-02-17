@@ -28,6 +28,7 @@ Route::get('/',[LoginController::class,'index'])->name('login');
 Route::post('/',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
+Route::get('passengers/recents',[PassengerController::class,'passengersRecent'])->name('passengers.recents');
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
 Route::get('tickets/step-one/listTravels',[TravelController::class,'list'])->name('travel.index');
 Route::get('tickets/step-two/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');

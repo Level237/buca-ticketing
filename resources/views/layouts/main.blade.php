@@ -198,7 +198,7 @@
                             <div class="collapse " id="pagesCollapse1">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link ">
+                                        <a href="{{ route('travel.index') }}" class="nav-link ">
                                             <span class="text-buca-secondary">Ajouter un Ticket</span>
                                         </a>
                                         <a href="{{route('tickets.index')}}" class="nav-link ">
@@ -230,8 +230,8 @@
                             <div class="collapse " id="pagesCollapse">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link ">
-                                            <span class="text-buca-secondary">Mes Passagers</span>
+                                        <a href="{{ route('passengers.recents') }}" class="nav-link ">
+                                            <span class="text-buca-secondary">Passagers recents</span>
                                         </a>
                                     </li>
 

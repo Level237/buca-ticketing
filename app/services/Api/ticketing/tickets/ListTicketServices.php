@@ -15,4 +15,23 @@ class ListTicketServices{
 
         return $response;
     }
+
+    public function allTickets(){
+        $url=(new UrlServices())->getUrl();
+        $token=Session::get('tokenAgency');
+        $response=Http::withToken($token)->get($url.'/api/agent/v1/list/ticket');
+
+        return $response;
+
+    }
+
+    public function ticketRecents(){
+
+        $url=(new UrlServices())->getUrl();
+        $token=Session::get('tokenAgency');
+        $response=Http::withToken($token)->get($url.'/api/agent/v1/list/tickets/recents');
+
+        return $response;
+
+    }
 }

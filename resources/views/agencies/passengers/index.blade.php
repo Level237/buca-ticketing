@@ -105,7 +105,7 @@ Ajouter un Passager
 
 
                                                 <td>
-                                                    @if($passager=="Homme")
+                                                    @if($passager->type=="Homme")
                                                         <div class="avatar avatar-circle avatar-xs me-2">
                                                             <img src="{{asset('assets/img/profile-man.jfif')}}" alt="..." class="avatar-img" width="30" height="30">
                                                         </div>
@@ -121,7 +121,7 @@ Ajouter un Passager
                                                 <td>{{ $passager->nom }}</td>
                                                 <td>{{ $passager->cniNumber }}</td>
                                                 <td>{{ $passager->seatNumber }}</td>
-                                                @if($passenger->type==0)
+                                                @if($ticket->type==0)
                                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                                     @else
                                                     <td class="status"><span class="legend-circle bg-secondary"></span>Kipart</td>

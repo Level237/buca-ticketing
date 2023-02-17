@@ -1,7 +1,7 @@
 @extends("layouts.main")
 
 @section("title")
-Liste des Tickets
+Passagers Recents
 @endsection
 
 @section("content")
@@ -16,7 +16,7 @@ Liste des Tickets
                 <div class="row">
                     <div class="col-9">
                         <h2 class="card-header-title h4 text-uppercase">
-                            Tout les Tickets
+                            Passagers recents
                         </h2>
                     </div>
                     <div class="col-3">

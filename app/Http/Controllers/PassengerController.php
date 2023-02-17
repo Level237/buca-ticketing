@@ -40,4 +40,12 @@ class PassengerController extends Controller
 
         return redirect()->back()->with('success','Passager ajouté avec success');
     }
+
+    public function passengersRecent(){
+
+        $response=(new ListTicketServices())->ticketRecents();
+        $datas=json_decode($response->getBody());
+        $details=Session::get('details');
+        return view('agencies.passengers.recent',compact('datas','details'));
+    }
 }
