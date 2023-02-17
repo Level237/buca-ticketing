@@ -20,12 +20,12 @@ use App\Http\Controllers\PassengerController;
 |
 */
 
-Route::get('/d', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('HomePage');
 });
 
-Route::get('/',[LoginController::class,'index'])->name('login');
-Route::post('/',[LoginController::class,'login'])->name('login');
+Route::get('/login',[LoginController::class,'index'])->name('login');
+Route::post('/login',[LoginController::class,'login'])->name('login');
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
 Route::get('passengers/recents',[PassengerController::class,'passengersRecent'])->name('passengers.recents');
