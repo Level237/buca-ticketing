@@ -12,10 +12,15 @@ class TravelController extends Controller
     public function list(){
 
         $details=Session::get('details');
-        $listTravel=(new ListTravelServices())->list($details['agency_id']);
-        $listTravel=json_decode($listTravel->getBody());
-        //return $listTravel;
-        $details=Session::get('details');
-        return view('agencies.travel.listTravel',compact('details','listTravel'));
+        if(isset($details)){
+            $listTravel=(new ListTravelServices())->list($details['agency_id']);
+            $listTravel=json_decode($listTravel->getBody());
+            //return $listTravel;
+            $details=Session::get('details');
+            return view('agencies.travel.listTravel',compact('details','listTravel'));
+        }else{
+            return to_route('login');
+        }
+
     }
 }

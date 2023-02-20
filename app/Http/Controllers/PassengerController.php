@@ -12,43 +12,61 @@ class PassengerController extends Controller
     public function index(Request $request){
 
         $details=Session::get('details');
-        $request->session()->put('travel_id',$request->travel_id);
-        $request->session()->put('travel_price',$request->travel_price);
-        $travel_id=$request->session()->get('travel_id');
-        // $request->session()->put('departure',$request->departure);
-        // $request->session()->put('arrival',$request->arrival);
-        // $request->session()->put('date',$request->date);
-        // $request->session()->put('classe',$request->classe);
-        $arrival=$request->arrival;
-        $departure=$request->departure;
-        $date=$request->date;
-        $classe=$request->classe;
-        $hours=$request->hours;
-        request()->fullUrlWithoutQuery('departure');
-        $travel_id=Session::get('travel_id');
-        $response=(new ListTicketServices())->list($travel_id);
-        $datas=json_decode($response->getBody());
-        //return $datas;
-        return view('agencies.passengers.index',compact('details','arrival','date','classe','departure','hours','datas'));
+        if(isset($details)){
+            $request->session()->put('travel_id',$request->travel_id);
+            $request->session()->put('travel_price',$request->travel_price);
+            $travel_id=$request->session()->get('travel_id');
+            // $request->session()->put('departure',$request->departure);
+            // $request->session()->put('arrival',$request->arrival);
+            // $request->session()->put('date',$request->date);
+            // $request->session()->put('classe',$request->classe);
+            $arrival=$request->arrival;
+            $departure=$request->departure;
+            $date=$request->date;
+            $classe=$request->classe;
+            $hours=$request->hours;
+            request()->fullUrlWithoutQuery('departure');
+            $travel_id=Session::get('travel_id');
+            $response=(new ListTicketServices())->list($travel_id);
+            $datas=json_decode($response->getBody());
+            //return $datas;
+            return view('agencies.passengers.index',compact('details','arrival','date','classe','departure','hours','datas'));
+        }else{
+            return to_route('login');
+        }
+
     }
 
     public function store(Request $request){
 
-        $travel_id=Session::get('travel_id');
+
         $sub_agency_id=Session::get('details');
-        $price=$request->session()->get('travel_price');
-        $amountReimbursed=$request->amount-$price;
-        $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id'],$price,$amountReimbursed);
+        if(isset($sub_agency_id)){
+            $travel_id=Session::get('travel_id');
+            $price=$request->session()->get('travel_price');
+            $amountReimbursed=$request->amount-$price;
+            $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id'],$price,$amountReimbursed);
 
 
-        return redirect()->back()->with('success','Passager ajouté avec success');
+            return redirect()->back()->with('success','Passager ajouté avec success');
+        }else{
+            return to_route('login');
+        }
+
     }
 
     public function passengersRecent(){
 
-        $response=(new ListTicketServices())->ticketRecents();
-        $datas=json_decode($response->getBody());
+
         $details=Session::get('details');
-        return view('agencies.passengers.recent',compact('datas','details'));
+
+        if(isset($details)){
+            $response=(new ListTicketServices())->ticketRecents();
+            $datas=json_decode($response->getBody());
+            return view('agencies.passengers.recent',compact('datas','details'));
+        }else{
+            return to_route('login');
+        }
+
     }
 }

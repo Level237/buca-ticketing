@@ -10,6 +10,11 @@ class DashboardController extends Controller
     public function index(){
 
         $details=Session::get('details');
-        return view('agencies.dashboard',compact('details'));
+        if(isset($details)){
+            return view('agencies.dashboard',compact('details'));
+        }else{
+            return to_route('login');
+        }
+
     }
 }

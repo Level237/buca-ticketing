@@ -11,11 +11,16 @@ class TicketController extends Controller
 {
     public function index(){
         $details=Session::get('details');
-        $travel_id=Session::get('travel_id');
-        $response=(new ListTicketServices())->allTickets();
-        $datas=json_decode($response->getBody());
-        //return $datas;
-        return view('agencies.tickets.index',compact('details','datas'));
+        if(isset($details)){
+            $travel_id=Session::get('travel_id');
+            $response=(new ListTicketServices())->allTickets();
+            $datas=json_decode($response->getBody());
+            //return $datas;
+            return view('agencies.tickets.index',compact('details','datas'));
+        }else{
+            return to_route('login');
+        }
+
     }
 
     public function store(Request $request,$travel_id){
