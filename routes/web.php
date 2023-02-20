@@ -30,8 +30,10 @@ Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard')
 Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.index');
 Route::get('passengers/recents',[PassengerController::class,'passengersRecent'])->name('passengers.recents');
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
-Route::get('tickets/step-one/listTravels',[TravelController::class,'list'])->name('travel.index');
-Route::get('tickets/step-two/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');
+Route::get('tickets/step-one/choice-your-date-of-travel',[TravelController::class,'choice'])->name('ticket.date-of-travel');
+Route::get('tickets/step-two/create-one-passenger',[TicketController::class,'addPassenger'])->name('ticket.create');
+//Route::post('tickets/step-two/list-of-travels',[TravelController::class,'list'])->name('travel.list');
+Route::get('tickets/step-three/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');
 Route::get('list/ticketsOfAgency',[TicketController::class,'list']);
 Route::post('tickets/create',[PassengerController::class,'store'])->name('passenger.create');
 Route::post('logout',[LogoutController::class,'logout'])->name('logout');

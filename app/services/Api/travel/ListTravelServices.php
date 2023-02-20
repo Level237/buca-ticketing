@@ -7,11 +7,15 @@ use Illuminate\Support\Facades\Http;
 
 class ListTravelServices{
 
-    public function list($id){
+    public function list($request,$id,$localisation){
 
         $url=(new UrlServices())->getUrl();
 
-        $response=Http::get($url.'/api/listTravelByAgency/'.$id);
+        $response=Http::post($url.'/api/listTravelWithDateAndClass/'.$id.'/'.$localisation,[
+            'date'=>$request->date,
+            'classe'=>$request->classe,
+            'hours'=>$request->hours
+        ]);
 
         return $response;
     }

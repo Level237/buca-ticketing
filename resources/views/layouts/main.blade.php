@@ -198,7 +198,7 @@
                             <div class="collapse " id="pagesCollapse1">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="{{ route('travel.index') }}" class="nav-link ">
+                                        <a href="{{ route('ticket.date-of-travel') }}" class="nav-link ">
                                             <span class="text-buca-secondary">Ajouter un Ticket</span>
                                         </a>
                                         <a href="{{route('tickets.index')}}" class="nav-link ">
