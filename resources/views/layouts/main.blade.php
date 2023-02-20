@@ -170,7 +170,7 @@
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-light logo-large" alt="..." width="125" height="25">
 
                     <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-small" alt="..." width="19" height="25">
-                    <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-large" alt="..." width="70" height="70"> <span style="color:white">{{ $details['nom'] }}</span>
+                    <img src="{{asset('assets/favicon/buca.jpg')}}" class="navbar-brand-img logo-dark logo-large" alt="..." width="70" height="70" style="margin-left: 50px"> <h4 style="color:white;text-align:center;">{{ $details['nom'] }}</h4>
                 </a>
 
                 <!-- Navbar toggler -->

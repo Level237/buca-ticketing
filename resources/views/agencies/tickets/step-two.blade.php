@@ -16,8 +16,13 @@ Ajouter un Passager
             </h1>
         </div>
         <div class="col-6">
-            <div class="alert buca-color" role="alert">
-                 nombre de places restantes
+
+            <div class="card w-500px">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item ">Nombre Total de places :{{ $list->number_of_places }} place(s)</li>
+                    <li class="list-group-item buca-color">Nombre de places restantes :{{ $list->placeAvailable }} places disponibles</li>
+
+                </ul>
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\services\Api\kipart\passengers\ListPlaceServices;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\services\Api\ticketing\tickets\AddTicketServices;
@@ -45,10 +46,16 @@ class TicketController extends Controller
                 $travel=(new ListTravelServices())->list($request,$details['agency_id'],$details['localisation']);
                 $data=json_decode($travel->getBody());
                 $request->session()->put('travel_id', $data->id);
+                $request->session()->put('travel_price', $data->price);
                 $response=(new ListTicketServices())->list($data->id);
+                $travel_id=Session::get('travel_id');
+
+                $list=(new ListPlaceServices())->list($travel_id);
+                $list=json_decode($list->getBody());
             $datas=json_decode($response->getBody());
                 //return $datas;
-                return view('agencies.tickets.step-two',compact('details','data','datas'));
+                //return $list;
+                return view('agencies.tickets.step-two',compact('details','data','datas','list'));
             }else{
                 return to_route('login');
             }
