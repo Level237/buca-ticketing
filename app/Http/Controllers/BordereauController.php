@@ -42,10 +42,16 @@ class BordereauController extends Controller
             $date=$request->date;
             $classe=$request->classe;
             $hours=$request->hours;
-            $bordereau=(new ListBordereauService())->list($details['id'],$data->id);
-            $datas=json_decode($bordereau->getBody());
-            //return $datas;
-            return view('agencies.bordereau.index',compact('details','datas','date','hours','classe'));
+            if((isset($hours) || isset($classe) || isset($date)) && (isset($hours) && isset($classe) && isset($date))){
+                $bordereau=(new ListBordereauService())->list($details['id'],$data->id);
+                $datas=json_decode($bordereau->getBody());
+                //return $datas;
+                return view('agencies.bordereau.index',compact('details','datas','date','hours','classe'));
+            }
+            else{
+                return to_route('bordereau.stepOne');
+            }
+
         }else{
             return to_route('login');
         }

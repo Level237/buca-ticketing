@@ -40,4 +40,6 @@ Route::get('tickets/step-two/create-one-passenger',[TicketController::class,'add
 Route::get('tickets/step-three/create-one-passenger',[PassengerController::class,'index'])->name('passenger.index');
 Route::get('list/ticketsOfAgency',[TicketController::class,'list']);
 Route::post('tickets/create',[PassengerController::class,'store'])->name('passenger.create');
+
+Route::get('list/travel',[TravelController::class,'listTravelWithLocalisation'])->name('travel.list');
 Route::post('logout',[LogoutController::class,'logout'])->name('logout');

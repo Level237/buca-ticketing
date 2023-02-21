@@ -19,4 +19,11 @@ class ListTravelServices{
 
         return $response;
     }
+    public function listTravelWithLocalisation($id,$localisation){
+        $url=(new UrlServices())->getUrl();
+
+        $response=Http::get($url.'/api/listTravelWithLocalisation/'.$id.'/'.$localisation);
+
+        return $response;
+    }
 }

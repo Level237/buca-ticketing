@@ -31,4 +31,16 @@ class TravelController extends Controller
             return to_route('login');
         }
     }
+
+    public function listTravelWithLocalisation(){
+        $details=Session::get('details');
+        if(isset($details)){
+            $listTravel=(new ListTravelServices())->listTravelWithLocalisation($details['agency_id'],$details['localisation']);
+            $listTravel=json_decode($listTravel->getBody());
+            //return $listTravel;
+            return view('agencies.travel.listTravel',compact('details','listTravel'));
+        }else{
+            return to_route('login');
+        }
+    }
 }

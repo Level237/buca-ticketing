@@ -43,19 +43,25 @@ class TicketController extends Controller
             $details=Session::get('details');
             if(isset($details)){
 
+
                 $travel=(new ListTravelServices())->list($request,$details['agency_id'],$details['localisation']);
                 $data=json_decode($travel->getBody());
-                $request->session()->put('travel_id', $data->id);
+                if(isset($data)){
+                    $request->session()->put('travel_id', $data->id);
                 $request->session()->put('travel_price', $data->price);
                 $response=(new ListTicketServices())->list($data->id);
                 $travel_id=Session::get('travel_id');
 
                 $list=(new ListPlaceServices())->list($travel_id);
                 $list=json_decode($list->getBody());
-            $datas=json_decode($response->getBody());
+                $datas=json_decode($response->getBody());
                 //return $datas;
                 //return $list;
                 return view('agencies.tickets.step-two',compact('details','data','datas','list'));
+                }else{
+                    return to_route('ticket.date-of-travel');
+                }
+
             }else{
                 return to_route('login');
             }

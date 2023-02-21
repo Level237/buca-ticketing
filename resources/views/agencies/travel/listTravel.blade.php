@@ -31,7 +31,7 @@ Choisissez un voyage
                 <div class="tab-pane fade show active" id="wizardStepOneSelected" role="tabpanel" aria-labelledby="wizardTabOneSelected">
                     <div class="card min-h-600px">
                         <div class="card-body px-6 pb-0">
-                            <h3>Choisir un Voyage</h3>
+                            <h3>Tout vos voyages</h3>
 
 
                             <div class="row">
@@ -55,6 +55,7 @@ Choisissez un voyage
                                                             <span class="ms-4">
                                                                 <span class="h3 card-title mb-0">{{ $datas->date }}</span><br>
                                                                 <span class="small text-muted mb-0">{{ $datas->hours }}</span>
+                                                                <span class="small text-muted mb-0">{{ $datas->classe }}</span>
                                                             </span>
                                                         </span>
                                                     </span>
@@ -87,7 +88,7 @@ Choisissez un voyage
                                                     </span>
                                                 </span>
 
-                                                <form method="get" action="{{ route('passenger.index') }}" id="search">
+                                                {{-- <form method="get" action="{{ route('passenger.index') }}" id="search">
 
 
                                         <input type="hidden" name="travel_id" value="{{ $datas->id }}">
@@ -109,7 +110,7 @@ Choisissez un voyage
 
                                                 </span>
 
-                                            </form>
+                                            </form> --}}
 
                                             </span>
                                         </span>
