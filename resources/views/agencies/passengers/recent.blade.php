@@ -16,7 +16,7 @@ Passagers Recents
                 <div class="row">
                     <div class="col-9">
                         <h2 class="card-header-title h4 text-uppercase">
-                            Passagers recents
+                            Passagers
                         </h2>
                     </div>
                     <div class="col-3">

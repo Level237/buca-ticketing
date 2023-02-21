@@ -29,7 +29,7 @@ class ListTicketServices{
 
         $url=(new UrlServices())->getUrl();
         $token=Session::get('tokenAgency');
-        $response=Http::withToken($token)->get($url.'/api/agent/v1/list/tickets/recents');
+        $response=Http::withToken($token)->get($url.'/api/agent/v1/list/ticket');
 
         return $response;
 

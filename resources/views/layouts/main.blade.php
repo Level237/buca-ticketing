@@ -211,7 +211,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{route('bordereau')}}">
+                            <a class="nav-link" href="{{route('bordereau.stepOne')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
                                 <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Bordereau</span>
                             </a>
@@ -231,7 +231,7 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a href="{{ route('passengers.recents') }}" class="nav-link ">
-                                            <span class="text-buca-secondary">Passagers recents</span>
+                                            <span class="text-buca-secondary">Liste des Passagers</span>
                                         </a>
                                     </li>
 
