@@ -7,6 +7,7 @@ use App\Http\Controllers\BordereauController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\LogoutController;
+use App\Http\Controllers\BusController;
 use App\Http\Controllers\PassengerController;
 
 /*
@@ -33,7 +34,7 @@ Route::get('passengers/recents',[PassengerController::class,'passengersRecent'])
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
 Route::get('bordereau/step-one/choice-your-date-of-travel',[BordereauController::class,'stepOne'])->name('bordereau.stepOne');
 Route::get('bordereau/step-two',[BordereauController::class,'stepTwo'])->name('bordereau.stepTwo');
-
+Route::get('list/bus',[BusController::class,'list'])->name('bus.list');
 Route::get('tickets/step-one/choice-your-date-of-travel',[TravelController::class,'choice'])->name('ticket.date-of-travel');
 Route::get('tickets/step-two/create-one-passenger',[TicketController::class,'addPassenger'])->name('ticket.create');
 //Route::post('tickets/step-two/list-of-travels',[TravelController::class,'list'])->name('travel.list');
