@@ -2,7 +2,7 @@
 
 @section("title")
 
-Choisissez un voyage
+Listes des bus
 @endsection
 @section('content')
 <div class="container-fluid">
@@ -11,18 +11,22 @@ Choisissez un voyage
 
         <!-- Title -->
         <h1 class="h2">
-            Voyages
+            Bus
         </h1>
 
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Listes des voyages</li>
+                <li class="breadcrumb-item active" aria-current="page">Listes des Bus</li>
             </ol>
         </nav>
     </div>
-
+    @if(session('success'))
+    <div class="alert buca-color" role="alert">
+        {{ session('success') }}
+    </div>
+    @endif
     <div class="row">
 
 
@@ -31,7 +35,23 @@ Choisissez un voyage
                 <div class="tab-pane fade show active" id="wizardStepOneSelected" role="tabpanel" aria-labelledby="wizardTabOneSelected">
                     <div class="card min-h-600px">
                         <div class="card-body px-6 pb-0">
-                            <h3>Tout vos bus</h3>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3>Tout vos bus</h3>
+                                </div>
+                                <div class="col-lg-6">
+
+
+                                    <button class="btn buca-color w-100 mb-6" data-bs-toggle="modal" data-bs-target="#eventModalBus" id="btnAddEvent">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
+                                        Nouveau Bus
+                                    </button>
+
+
+
+                                </div>
+                            </div>
+
 
 
                             <div class="row">
@@ -54,20 +74,14 @@ Choisissez un voyage
                                                                     </span>
 
                                                                     <span class="ms-4">
-                                                                        <span class="h3 card-title mb-0">{{ $bus->Immatriculation }}</span><br>
-                                                                        <span class="small text-muted mb-0">{{ $bus->number_of_places }}</span>
-                                                                        <span class="small text-muted mb-0">{{ $bus->classe }}</span>
+                                                                        <span class="h3 card-title mb-0">{{ $bus->immatriculation }}</span><br>
+                                                                        <span class="small text-muted mb-0">{{ $bus->number_of_places }} places</span>
                                                                     </span>
                                                                 </span>
                                                             </span>
                                                         </span>
 
-                                                        <span class="card-footer p-0">
-                                                            <!-- Button -->
-                                                            <span class="btn text-bg-light link-secondary d-flex align-items-center justify-content-center rounded-0 rounded-bottom">
-                                                                Select
-                                                            </span>
-                                                        </span>
+
                                                     </span>
                                                 </span>
 
@@ -83,7 +97,7 @@ Choisissez un voyage
 
                                                                     <span class="ms-4">
                                                                         <span class="h3 card-title mb-0">Buca Voyage</span><br>
-                                                                        <span class="small text-muted mb-0">{{ $bus->classe }}</span>
+                                                                        <span class="small text-muted mb-0"></span>
                                                                     </span>
                                                                 </span>
                                                             </span>
@@ -139,9 +153,7 @@ Choisissez un voyage
 
                                 <!-- Button -->
 
-                                <a href="" class="btn btn-primary"  onclick="event.preventDefault(); document.getElementById('search').submit();" title="Sign Out">
-                   Next
-                </a>
+
                             </div>
                         </div>
 
@@ -425,4 +437,5 @@ Choisissez un voyage
         </div>
     </div>
 </div>
+@include('layouts.modals.add-bus')
 @endsection

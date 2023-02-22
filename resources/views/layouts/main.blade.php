@@ -251,15 +251,11 @@
                             <div class="collapse " id="tasksCollapse">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link ">
+                                        <a href="{{ route('bus.list') }}" class="nav-link ">
                                             <span class="text-buca-secondary">Listes des Bus</span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link ">
-                                            <span class="text-buca-secondary">Ajouter un bus</span>
-                                        </a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </li>
