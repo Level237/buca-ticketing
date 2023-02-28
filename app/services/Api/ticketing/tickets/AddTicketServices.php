@@ -10,7 +10,7 @@ class AddTicketServices{
 
         $url=(new UrlTicketingServices())->getUrl();
 
-        $response=Http::post($url.'/api/add/passenger/'.$id.'/'.$sub_agency_id.'/'.$price.'/'.$amountReimbursed,[
+        $response=Http::timeout(60)->post($url.'/api/add/passenger/'.$id.'/'.$sub_agency_id.'/'.$price.'/'.$amountReimbursed,[
             'name'=>$request->name,
             'type'=>$request->type,
             'cni'=>$request->cni,
