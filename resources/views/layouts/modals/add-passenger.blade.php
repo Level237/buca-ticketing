@@ -46,6 +46,10 @@
                                 <label for="location" class="form-label">Montant Deposé</label>
                                 <input type="number" name="amount" class="form-control" id="location" placeholder="Entrer le montant deposé par le passager">
                             </div>
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Montant Remboursé</label>
+                                <input type="number" name="amountReimbursed" class="form-control" id="location" placeholder="Entrer le montant à remboursé">
+                            </div>
 
                         </div>
                         <!-- End Body -->

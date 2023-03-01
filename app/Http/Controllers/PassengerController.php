@@ -44,11 +44,16 @@ class PassengerController extends Controller
         if(isset($sub_agency_id)){
             $travel_id=Session::get('travel_id');
             $price=$request->session()->get('travel_price');
-            $amountReimbursed=$request->amount-$price;
-            $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id'],$price,$amountReimbursed);
+            $amountReimbursed=$request->amountReimbursed;
+            if($request->amount < $price){
+                return redirect()->back()->with('fail','le montant que vous recevez ne peut pas etre inferieur au prix du voyage');
+            }else{
+                $response=(new AddTicketServices())->addTicket($request,$travel_id,$sub_agency_id['id'],$price,$amountReimbursed);
 
 
-            return redirect()->back()->with('success','Passager ajouté avec success');
+                return redirect()->back()->with('success','Passager ajouté avec success');
+            }
+
         }else{
             return to_route('login');
         }

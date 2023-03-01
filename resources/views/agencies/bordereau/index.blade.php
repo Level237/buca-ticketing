@@ -77,7 +77,7 @@ Bordereau de voyage
                     </th>
                     <th class="w-150px min-w-150px">
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                            Etat de Vente
+                            point de Vente
                         </a>
                     </th>
                 </tr>
@@ -100,7 +100,7 @@ Bordereau de voyage
                             <td>{{ $bordereau->id }}</td>
                             <td>{{ $bordereau->amountReimbursed }}</td>
                             <td>{{ $bordereau->ticketAmount }}</td>
-                            @if($bordereau->type==1)
+                            @if($bordereau->type==0)
                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                     @else
                                     <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>

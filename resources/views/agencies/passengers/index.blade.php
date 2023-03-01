@@ -85,7 +85,7 @@ Ajouter un Passager
 
                                         <th class="w-150px min-w-150px">
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                                Etat de Vente
+                                                point de Vente
                                             </a>
                                         </th>
                                     </tr>

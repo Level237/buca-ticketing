@@ -32,6 +32,14 @@ Ajouter un Passager
         {{ session('success') }}
     </div>
     @endif
+    @if(session('fail'))
+    <div>
+
+        <script>
+            alert("le montant que vous recevez ne peut pas etre inferieur au prix du voyage")
+        </script>
+    </div>
+    @endif
     <div class="row flex-md-grow-1">
         <div class="col d-flex">
 

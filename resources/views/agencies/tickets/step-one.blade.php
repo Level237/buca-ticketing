@@ -31,13 +31,13 @@ Selectionnez une date et une classe de voyage
         <div class="col-lg-4">
             <label for="eventType" class="form-label">Classe de Voyage</label>
             <select name="classe" class="form-control">
-                <option value="classique">Classique</option>
+                <option value="Classique">Classique</option>
                 <option value="vip">VIP</option>
             </select>
         </div>
         <div class="col-lg-4">
 
-                <label for="eventType" class="form-label">Type</label>
+                <label for="eventType" class="form-label">heure</label>
                 <select class="form-select" name="hours" id="eventType" required="" data-select='{
                         "placeholder": "Choose..."
                     }'>
