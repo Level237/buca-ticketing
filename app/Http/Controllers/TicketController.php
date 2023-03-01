@@ -57,7 +57,7 @@ class TicketController extends Controller
                 $datas=json_decode($response->getBody());
                 //return $datas;
                 //return $list;
-                return view('agencies.tickets.step-two',compact('details','data','datas','list'));
+            return view('agencies.tickets.step-two',compact('details','data','datas','list'));
                 }else{
                     return to_route('ticket.date-of-travel');
                 }

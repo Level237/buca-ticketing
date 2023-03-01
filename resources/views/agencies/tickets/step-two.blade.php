@@ -12,7 +12,7 @@ Ajouter un Passager
     <div class="row align-items-center">
         <div class="col-6">
             <h1 class="h2">
-                Voyage du {{ $data->date }}
+                Voyage  {{ $data->classe }} de  {{ $data->price }}FCFA du {{ $data->date }} à {{ $data->hours }}
             </h1>
         </div>
         <div class="col-6">

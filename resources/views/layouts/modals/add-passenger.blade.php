@@ -40,11 +40,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="location" class="form-label">Numero de telephone</label>
-                                <input type="text" name="telephone" class="form-control" id="location" placeholder="Entrer le numero de telephone du passager">
+                                <input type="number" name="telephone" class="form-control" id="location" placeholder="Entrer le numero de telephone du passager">
                             </div>
                               <div class="mb-3">
                                 <label for="location" class="form-label">Montant Deposé</label>
-                                <input type="text" name="amount" class="form-control" id="location" placeholder="Entrer le montant deposé par le passager">
+                                <input type="number" name="amount" class="form-control" id="location" placeholder="Entrer le montant deposé par le passager">
                             </div>
 
                         </div>
