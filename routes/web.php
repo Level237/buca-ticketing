@@ -32,6 +32,7 @@ Route::get('list/tickets',[TicketController::class,'index'])->name('tickets.inde
 Route::get('passengers/recents',[PassengerController::class,'passengersRecent'])->name('passengers.recents');
 
 Route::get('bordereau',[BordereauController::class,'index'])->name('bordereau');
+Route::get('download',[BordereauController::class,'download'])->name('down');
 Route::get('bordereau/step-one/choice-your-date-of-travel',[BordereauController::class,'stepOne'])->name('bordereau.stepOne');
 Route::get('bordereau/step-two',[BordereauController::class,'stepTwo'])->name('bordereau.stepTwo');
 Route::get('list/bus',[BusController::class,'list'])->name('bus.list');

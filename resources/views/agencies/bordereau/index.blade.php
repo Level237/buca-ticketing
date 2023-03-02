@@ -2,7 +2,7 @@
 @section('title')
 Bordereau de voyage
 @endsection
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 @section('content')
 <div class="card border-0 flex-fill w-100" data-list='{"valueNames": ["name", "email", "id", {"name": "date", "attr": "data-signed"}, "status"], "page": 8}' id="users">
     <div class="card-header border-0 card-header-space-between">
@@ -15,12 +15,9 @@ Bordereau de voyage
                 </h2>
             </div>
             <div class="col-3">
-                <a href="{{ route('ticket.date-of-travel') }}">
-                    <button type="button" class="btn buca-color ms-md-4" data-bs-toggle="modal" data-bs-target="#createKeyModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                        Ajouter un Ticket
-                    </button>
-                </a>
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="{{route('down',['download'=>'pdf'])}}">Download PDF</a>
+                  </div>
 
             </div>
         </div>

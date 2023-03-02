@@ -137,7 +137,7 @@ Ajouter un Passager
                                                 @if($ticket->type==0)
                                                         <td class="status"><span class="legend-circle bg-danger"></span>Buca</td>
                                                     @else
-                                                    <td class="status"><span class="legend-circle bg-secondary"></span>Kipart</td>
+                                                    <td class="status"><span class="legend-circle bg-warning"></span>Kipart</td>
                                                 @endif
 
 
