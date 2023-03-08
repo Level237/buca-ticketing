@@ -54,7 +54,7 @@ class BordereauController extends Controller
                     'hours' => $hours,
                     'classe'=>$classe,
             ];
-    
+
             if($request->has('download'))
             {
                 $pdf = PDF::loadView('index',$d);
@@ -74,7 +74,7 @@ class BordereauController extends Controller
     }
 
     public function download(Request $request){
-        
+
         return redirect()->back();
     }
 }
