@@ -55,7 +55,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Cette Semaine
+                            {{ __("This week")}}
                         </p>
 
                         <!-- Comment -->
@@ -67,7 +67,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Mensuel
+                            {{ __("Monthly")}}
                         </p>
 
                         <!-- Comment -->
@@ -89,7 +89,7 @@ Buca Dashboard
 
                         <!-- Title -->
                         <h5 class="text-uppercase text-muted fw-semibold mb-2">
-                            Passagers
+                            {{ __("Passengers")}}
                         </h5>
 
                         <!-- Subtitle -->
@@ -110,7 +110,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Cette Semaine
+                            {{ __("This week")}}
                         </p>
 
                         <!-- Comment -->
@@ -122,7 +122,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Mensuels
+                            {{ __("Monthly")}}
                         </p>
 
                         <!-- Comment -->
@@ -145,7 +145,7 @@ Buca Dashboard
 
                         <!-- Title -->
                         <h5 class="text-uppercase text-muted fw-semibold mb-2">
-                            Vente du Jour
+                            {{ __("sale of the day")}}
                         </h5>
 
                         <!-- Subtitle -->
@@ -166,7 +166,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Cette Semaine
+                            {{ __("This week")}}
                         </p>
 
                         <!-- Comment -->
@@ -178,7 +178,7 @@ Buca Dashboard
 
                         <!-- Label -->
                         <p class="fs-6 text-muted text-uppercase mb-0">
-                            Mensuel
+                            {{ __("Monthly")}}
                         </p>
 
                         <!-- Comment -->
@@ -198,7 +198,7 @@ Buca Dashboard
 
                 <!-- Title -->
                 <h4 class="text-uppercase fw-semibold mb-2">
-                    Balance Courante
+                    {{ __("Current Balance")}}
                 </h4>
 
                 <!-- Subtitle -->
@@ -224,7 +224,7 @@ Buca Dashboard
 
                 <!-- Title -->
                 <h2 class="card-header-title h4 text-uppercase">
-                    Tickets Recents
+                    {{ __("RECENT TICKETS")}}
                 </h2>
 
                 <!-- Dropdown -->
@@ -234,10 +234,10 @@ Buca Dashboard
                     </a>
                     <div class="dropdown-menu">
                         <a href="javascript: void(0);" class="dropdown-item">
-                            Exporter les tickets
+                            {{ __("Export tickets")}}
                         </a>
                         <a href="javascript: void(0);" class="dropdown-item">
-                            Envoyer
+                            {{ __("Send")}}
                         </a>
 
                     </div>
@@ -256,33 +256,33 @@ Buca Dashboard
                             </th>
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                                    Nom du Passager
+                                    {{ __("Name of passenger")}}
                                 </a>
                             </th>
 
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
-                                    Id Passager
+                                    {{ __("Passenger Id")}}
                                 </a>
                             </th>
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
-                                    Depart
+                                    {{ __("Departure")}}
                                 </a>
                             </th>
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    Arrivée
+                                    {{ __("Arrival")}}
                                 </a>
                             </th>
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    Code Qr
+                                    {{ __("qr code")}}
                                 </a>
                             </th>
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    Etat de Vente
+                                    {{ __("state of sale")}}
                                 </a>
                             </th>
                         </tr>
@@ -553,7 +553,7 @@ Buca Dashboard
 
                 <!-- Title -->
                 <h2 class="card-header-title h4 text-uppercase">
-                    Statut des Tickets
+                    {{ __("Ticket Status")}}
                 </h2>
 
                 <!-- Dropdown -->
@@ -563,7 +563,7 @@ Buca Dashboard
                     </a>
                     <div class="dropdown-menu">
                         <a href="javascript: void(0);" class="dropdown-item">
-                            Action
+                            {{ __("Action")}}
                         </a>
 
                     </div>
@@ -580,7 +580,7 @@ Buca Dashboard
 
                             <!-- Labels -->
                             <div class="position-absolute top-50 start-50 translate-middle text-center">
-                                <p class="fs-5 mb-0 text-muted lh-sm">Tickets</p>
+                                <p class="fs-5 mb-0 text-muted lh-sm">{{ __("Tickets")}}</p>
                                 <h3 class="display-2 fw-bold mb-0">329</h3>
                             </div>
                         </div>
@@ -594,7 +594,7 @@ Buca Dashboard
                                         <!-- Label -->
                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                             <span class="legend-circle bg-primary"></span>
-                                            Delivré
+                                            {{ __("Issued")}}
                                         </p>
                                     </div>
                                     <div class="col-auto col-lg">
@@ -611,7 +611,7 @@ Buca Dashboard
                                         <!-- Label -->
                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                             <span class="legend-circle bg-dark"></span>
-                                            En Cours
+                                            {{ __("in progress")}}
                                         </p>
                                     </div>
                                     <div class="col-auto col-lg">
@@ -628,7 +628,7 @@ Buca Dashboard
                                         <!-- Label -->
                                         <p class="fs-4 d-flex align-items-center fw-semibold mb-0">
                                             <span class="legend-circle bg-gray-400"></span>
-                                            Restants
+                                            {{ __("Remaining")}}
                                         </p>
                                     </div>
                                     <div class="col-auto col-lg">
@@ -654,7 +654,7 @@ Buca Dashboard
 
                 <!-- Title -->
                 <h2 class="card-header-title h4 text-uppercase">
-                    Gestion de Revenue
+                    {{ __("Revenue Management")}}
                 </h2>
             </div>
 

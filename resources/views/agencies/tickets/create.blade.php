@@ -2,7 +2,7 @@
 
 @section("title")
 
-Ajouter un ticket
+{{ __("Add Ticket")}}
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-Bordereau de voyage
+{{ __("Travel slip")}}
 @endsection
 
 @section('content')
@@ -11,14 +11,14 @@ Bordereau de voyage
         <div class="row">
             <div class="col-9">
                 <h2 class="card-header-title h4 text-uppercase">
-                    Bordereau du voyage du {{ $date }} à {{ $hours }} de classe {{ $classe }}
+                    {{ __("Travel slip from")}}{{ $date }} {{ __("at")}} {{ $hours }} {{ __("of class")}} {{ $classe }}
                 </h2>
             </div>
             <div class="col-3">
                 <a href="{{ route('ticket.date-of-travel') }}">
                     <button type="button" class="btn buca-color ms-md-4" data-bs-toggle="modal" data-bs-target="#createKeyModal">
                         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                        Ajouter un Ticket
+                        {{ __("Add Ticket")}}
                     </button>
                 </a>
 
@@ -33,10 +33,10 @@ Bordereau de voyage
             </a>
             <div class="dropdown-menu">
                 <a href="javascript: void(0);" class="dropdown-item">
-                    Exporter les tickets
+                    {{ __("Export tickets")}}
                 </a>
                 <a href="javascript: void(0);" class="dropdown-item">
-                    Envoyer
+                    {{ __("Send")}}
                 </a>
 
             </div>
@@ -55,13 +55,13 @@ Bordereau de voyage
                     </th>
                     <th>
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                            Nom Et Prenoms
+                            {{ __("Name")}}
                         </a>
                     </th>
 
                     <th>
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
-                            Numero de bordereau
+                            {{ __("Slip number")}}
                         </a>
                     </th>
                     <th>
@@ -71,18 +71,18 @@ Bordereau de voyage
                     </th>
                     <th>
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
-                            Remboursement
+                            {{ __("Refund")}}
                         </a>
                     </th>
 
                     <th class="w-150px min-w-150px">
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                            Montant Billet
+                            {{ __("Amount")}}
                         </a>
                     </th>
                     <th class="w-150px min-w-150px">
                         <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                            point de Vente
+                            {{ __("Sale point")}}
                         </a>
                     </th>
                 </tr>
@@ -119,7 +119,7 @@ Bordereau de voyage
                         <td style="text-align: center"></td>
                         <td style="text-align: center"></td>
                         <td style="text-align: center"></td>
-                        <td style="text-align: center">Aucun Bordereau disponible</td>
+                        <td style="text-align: center">{{ __("No slip available")}}</td>
 
                     </tr>
                 @endforelse

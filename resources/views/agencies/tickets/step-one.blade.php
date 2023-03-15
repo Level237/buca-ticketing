@@ -2,21 +2,21 @@
 
 @section("title")
 
-Selectionnez une date et une classe de voyage
+{{ __("Select a date and travel class")}}
 @endsection
 @section('content')
 <div class="d-flex align-items-baseline justify-content-between">
 
     <!-- Title -->
     <h1 class="h2">
-        Selectionnez une date et une classe de voyage
+        {{ __("Select a date and travel class")}}
     </h1>
 
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-            <li class="breadcrumb-item active" aria-current="page">choix de la date et de la classe</li>
+            <li class="breadcrumb-item active" aria-current="page">{{ __("Choice of date and class")}}</li>
         </ol>
     </nav>
 </div>
@@ -29,15 +29,15 @@ Selectionnez une date et une classe de voyage
             <input type="date" name="date" id="" class="form-control">
         </div>
         <div class="col-lg-4">
-            <label for="eventType" class="form-label">Classe de Voyage</label>
+            <label for="eventType" class="form-label">{{ __("Travel class")}}</label>
             <select name="classe" class="form-control">
-                <option value="Classique">Classique</option>
+                <option value="Classique">{{ __("Classic")}}</option>
                 <option value="vip">VIP</option>
             </select>
         </div>
         <div class="col-lg-4">
 
-                <label for="eventType" class="form-label">heure</label>
+                <label for="eventType" class="form-label">{{ __("Time")}}</label>
                 <select class="form-select" name="hours" id="eventType" required="" data-select='{
                         "placeholder": "Choose..."
                     }'>
@@ -57,7 +57,7 @@ Selectionnez une date et une classe de voyage
                     <option value="18:30">18:30</option>
                     <option value="18:45">18:45</option>
                 </select>
-                <div class="invalid-feedback">s'il vous plait selectionnez une heure</div>
+                <div class="invalid-feedback">{{ __("Please select a time")}}</div>
 
         </div>
     </div>
@@ -65,7 +65,7 @@ Selectionnez une date et une classe de voyage
 
         </div>
 
-            <button class="buca-color" type="submit">Soumettre</button>
+            <button class="buca-color" type="submit">{{ __("Submit")}}</button>
 
 
 

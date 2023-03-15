@@ -1,7 +1,7 @@
 @extends("layouts.main")
 
 @section("title")
-Liste des Tickets
+{{ __("Ticket List")}}
 @endsection
 
 @section("content")
@@ -16,14 +16,14 @@ Liste des Tickets
                 <div class="row">
                     <div class="col-9">
                         <h2 class="card-header-title h4 text-uppercase">
-                            Tout les Tickets
+                            {{ __("All tickets")}}
                         </h2>
                     </div>
                     <div class="col-3">
                         <a href="{{ route('ticket.create') }}">
                             <button type="button" class="btn buca-color p-2" data-bs-toggle="modal" data-bs-target="#createKeyModal" style="padding-left:22px;padding-right:12px">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                                Ajouter un Ticket
+                                {{ __("Add Ticket")}}
                             </button>
                         </a>
                     </div>
@@ -37,10 +37,10 @@ Liste des Tickets
                     </a>
                     <div class="dropdown-menu">
                         <a href="javascript: void(0);" class="dropdown-item">
-                            Exporter les tickets
+                            {{ __("Export tickets")}}
                         </a>
                         <a href="javascript: void(0);" class="dropdown-item">
-                            Envoyer
+                            {{ __("Send")}}
                         </a>
 
                     </div>
@@ -65,28 +65,28 @@ Liste des Tickets
                             </th>
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                                    Nom du Passager
+                                    {{ __("Name of passenger")}}
                                 </a>
                             </th>
 
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
-                                    Id Passager
+                                    {{ __("Passenger Id")}}
                                 </a>
                             </th>
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
-                                    Numero de place
+                                    {{ __("Place number")}}
                                 </a>
                             </th>
                             <th>
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
-                                    Depart
+                                    {{ __("Departure")}}
                                 </a>
                             </th>
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    Arrivée
+                                    {{ __("Arrival")}}
                                 </a>
                             </th>
                             <th class="w-150px min-w-150px">
@@ -96,13 +96,13 @@ Liste des Tickets
                             </th>
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    Heure Voyage
+                                    {{ __("Travel time")}}
                                 </a>
                             </th>
 
                             <th class="w-150px min-w-150px">
                                 <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                    point de Vente
+                                    {{ __("Sale point")}}
                                 </a>
                             </th>
                         </tr>
@@ -165,7 +165,7 @@ Liste des Tickets
                                         <td style="text-align: center"></td>
                                         <td style="text-align: center"></td>
                                         <td style="text-align: center"></td>
-                                        <td style="text-align: center">Aucun Ticket</td>
+                                        <td style="text-align: center">{{ __("No ticket")}}</td>
 
                                     </tr>
                             @endforelse
