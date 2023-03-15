@@ -9,6 +9,7 @@ use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\LogoutController;
 use App\Http\Controllers\BusController;
 use App\Http\Controllers\PassengerController;
+use App\Http\Controllers\LocalizationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,9 @@ use App\Http\Controllers\PassengerController;
 Route::get('/', function () {
     return view('HomePage');
 });
+
+//Setting local
+Route::get('lang/{locale}', [LocalizationController::class,'index']);
 
 Route::get('/login',[LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'login'])->name('login');
