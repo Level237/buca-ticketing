@@ -199,7 +199,7 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a href="{{ route('ticket.date-of-travel') }}" class="nav-link ">
-                                            <span class="text-buca-secondary">Ajouter un Ticket</span>
+                                            <span class="text-buca-secondary">{{ __("Add Ticket")}}</span>
                                         </a>
                                         <a href="{{route('tickets.index')}}" class="nav-link ">
                                             <span class="text-buca-secondary">Listes de tickets</span>
