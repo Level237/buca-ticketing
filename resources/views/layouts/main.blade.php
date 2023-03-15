@@ -252,7 +252,7 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a href="{{ route('bus.list') }}" class="nav-link ">
-                                            <span class="text-buca-secondary">Listes des Bus</span>
+                                            <span class="text-buca-secondary">{{ __("Bus List")}}</span>
                                         </a>
                                     </li>
 
@@ -338,17 +338,17 @@
 
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <h6 class="dropdown-header text-uppercase">Selectionnez une langue</h6>
+                                <h6 class="dropdown-header text-uppercase">{{ __("Select a language")}}</h6>
                             </li>
                             <li>
                                 <a href="lang/en" class="dropdown-item active">
-                                    <span class="avatar avatar-circle avatar-xxs"><img class="avatar-img" src="{{asset('assets/svg/en.svg')}}" alt="..." width="18" height="18"></span><span class="text-truncate ms-2">Anglais</span>
+                                    <span class="avatar avatar-circle avatar-xxs"><img class="avatar-img" src="{{asset('assets/svg/en.svg')}}" alt="..." width="18" height="18"></span><span class="text-truncate ms-2">{{ __("English")}}</span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="lang/fr" class="dropdown-item">
-                                    <span class="avatar avatar-circle avatar-xxs"><img class="avatar-img" src="{{asset('assets/svg/fr.svg')}}" alt="..." width="18" height="18"></span><span class="text-truncate ms-2">Français</span>
+                                    <span class="avatar avatar-circle avatar-xxs"><img class="avatar-img" src="{{asset('assets/svg/fr.svg')}}" alt="..." width="18" height="18"></span><span class="text-truncate ms-2">{{ __("French")}}</span>
                                 </a>
                             </li>
 
@@ -363,7 +363,7 @@
                     <a class="d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm mx-1 mx-lg-2 w-40px h-40px position-relative link-secondary" data-bs-toggle="offcanvas" href="#offcanvasNotifications" role="button" aria-controls="offcanvasNotifications">
                         <svg viewbox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M10,21.75a2.087,2.087,0,0,0,4.005,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M12 3L12 0.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M12,3a7.5,7.5,0,0,1,7.5,7.5c0,7.046,1.5,8.25,1.5,8.25H3s1.5-1.916,1.5-8.25A7.5,7.5,0,0,1,12,3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
-                            2<span class="visually-hidden">Messages non lues</span>
+                            2<span class="visually-hidden">{{ __("Unread Messages")}}</span>
                         </span>
                     </a>
 
@@ -385,12 +385,12 @@
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="d-flex w-100 justify-content-between">
                                                 <h5 class="mb-1">Kipart</h5>
-                                                <small class="text-muted">il y a 10 minutes</small>
+                                                <small class="text-muted">{{ __("10 minutes ago")}}</small>
                                             </div>
 
                                             <div class="d-flex flex-column">
-                                                <p class="mb-1">Titre:Recapitulatif de la journée</p>
-                                                <small class="text-secondary">Nous passerons dans vos locaux pour vous formez en maintenance de vos système de ticketing...</small>
+                                                <p class="mb-1">{{ __("Title: Summary of the day")}}</p>
+                                                <small class="text-secondary">{{ __("We will visit your premises to train you in the maintenance of your ticketing system..")}}</small>
                                             </div>
                                         </div>
                                     </div>
@@ -405,12 +405,12 @@
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="d-flex w-100 justify-content-between">
                                                 <h5 class="mb-1">Kipart</h5>
-                                                <small class="text-muted">il y 1 Heure</small>
+                                                <small class="text-muted">{{ __("1 hour ago")}}</small>
                                             </div>
 
                                             <div class="d-flex flex-column">
                                                 <p class="mb-1">Titre:Ticketing</p>
-                                                <small class="text-secondary">Bien evidement nous sommes disponible...</small>
+                                                <small class="text-secondary">{{ __("Of course we are available...")}}</small>
                                             </div>
                                         </div>
                                     </div>
@@ -452,8 +452,8 @@
 
 
 
-                            <a class="dropdown-item" href="javascript: void(0);">Profil et Compte</a>
-                            <a class="dropdown-item" href="javascript: void(0);">Paramètres</a>
+                            <a class="dropdown-item" href="javascript: void(0);">{{ __("Profile and Account")}}</a>
+                            <a class="dropdown-item" href="javascript: void(0);">{{ __("Settings")}}</a>
 
                             <hr class="dropdown-divider">
 
@@ -461,7 +461,7 @@
                                 @csrf
                             </form>
                             <a href="" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout').submit();" title="Sign Out">
-                Deconnexion
+                                {{ __("Logout")}}
             </a>
                         </div>
                     </div>

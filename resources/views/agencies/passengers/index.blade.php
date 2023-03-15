@@ -2,7 +2,7 @@
 
 @section("title")
 
-Ajouter un Passager
+{{ __("Ajouter un Passager")}}
 @endsection
 
 @section('content')
@@ -12,12 +12,12 @@ Ajouter un Passager
     <div class="row align-items-center">
         <div class="col-6">
             <h1 class="h2">
-                Voyage du {{ $date}} de classe {{ $classe }} à {{ $hours }}
+                {{ __("Trip of")}} {{ $date}} de classe {{ $classe }} {{ __("at")}} {{ $hours }}
             </h1>
         </div>
         <div class="col-6">
             <div class="alert buca-color" role="alert">
-                 nombre de places restantes
+                {{ __("Number of places remaining")}}
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ Ajouter un Passager
                             <!-- Button -->
                             <button class="btn buca-color w-100 mb-6" data-bs-toggle="modal" data-bs-target="#eventModal" id="btnAddEvent">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                                Nouveau Passager
+                                {{ __("New passenger")}}
                             </button>
 
                         </div>
@@ -63,13 +63,13 @@ Ajouter un Passager
                                         <th>
 
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                                                Id Passager
+                                                {{ __("Passenger Id")}}
                                             </a>
                                         </th>
 
                                         <th>
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
-                                                Nom Passager
+                                                {{ __("Name of passenger")}}
                                             </a>
                                         </th>
                                         <th>
@@ -79,13 +79,13 @@ Ajouter un Passager
                                         </th>
                                         <th class="w-150px min-w-150px">
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                                Numero de place
+                                                {{ __("Place number")}}
                                             </a>
                                         </th>
 
                                         <th class="w-150px min-w-150px">
                                             <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                                point de Vente
+                                                {{ __("Sale point")}}
                                             </a>
                                         </th>
                                     </tr>
@@ -137,7 +137,7 @@ Ajouter un Passager
                                         <td style="text-align: center"></td>
                                         <td style="text-align: center"></td>
                                         <td style="text-align: center"></td>
-                                        <td style="text-align: center">Aucun Passager</td>
+                                        <td style="text-align: center">{{ __("No Passenger")}}</td>
 
                                     </tr>
 

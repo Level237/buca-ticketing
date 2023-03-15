@@ -2,7 +2,7 @@
 
 @section("title")
 
-Choisissez un voyage
+{{ __("Choose a travel")}}
 @endsection
 @section('content')
 <div class="container-fluid">
@@ -11,14 +11,14 @@ Choisissez un voyage
 
         <!-- Title -->
         <h1 class="h2">
-            Voyages
+            {{ __("Travels")}}
         </h1>
 
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Listes des voyages</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ __("Trip Lists")}}</li>
             </ol>
         </nav>
     </div>
@@ -31,7 +31,7 @@ Choisissez un voyage
                 <div class="tab-pane fade show active" id="wizardStepOneSelected" role="tabpanel" aria-labelledby="wizardTabOneSelected">
                     <div class="card min-h-600px">
                         <div class="card-body px-6 pb-0">
-                            <h3>Tout vos voyages</h3>
+                            <h3>{{ __("All your trips")}}</h3>
 
 
                             <div class="row">

@@ -2,7 +2,7 @@
 
 @section("title")
 
-Listes des bus
+{{ __("Bus List")}}
 @endsection
 @section('content')
 <div class="container-fluid">
@@ -18,7 +18,7 @@ Listes des bus
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Listes des Bus</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ __("Bus List")}}</li>
             </ol>
         </nav>
     </div>
@@ -37,14 +37,14 @@ Listes des bus
                         <div class="card-body px-6 pb-0">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h3>Tout vos bus</h3>
+                                    <h3>{{ __("All bus")}}</h3>
                                 </div>
                                 <div class="col-lg-6">
 
 
                                     <button class="btn buca-color w-100 mb-6" data-bs-toggle="modal" data-bs-target="#eventModalBus" id="btnAddEvent">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" height="14" width="14" class="me-1"><path d="M0,12a1.5,1.5,0,0,0,1.5,1.5h8.75a.25.25,0,0,1,.25.25V22.5a1.5,1.5,0,0,0,3,0V13.75a.25.25,0,0,1,.25-.25H22.5a1.5,1.5,0,0,0,0-3H13.75a.25.25,0,0,1-.25-.25V1.5a1.5,1.5,0,0,0-3,0v8.75a.25.25,0,0,1-.25.25H1.5A1.5,1.5,0,0,0,0,12Z" style="fill: currentColor"></path></svg>
-                                        Nouveau Bus
+                                        {{ __("New bus")}}
                                     </button>
 
 
