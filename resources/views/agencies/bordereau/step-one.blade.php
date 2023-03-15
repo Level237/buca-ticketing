@@ -41,7 +41,7 @@
                 <select class="form-select" name="hours" id="eventType" required="" data-select='{
                         "placeholder": "Choose..."
                     }'>
-                    <option value="" label="{{ __("Travel time")}}"></option>
+                    <option value="" label={{ __("Travel time")}}></option>
                     <option value="05:00">05:00</option>
                     <option value="06:00">06:00</option>
                     <option value="07:30">07:30</option>

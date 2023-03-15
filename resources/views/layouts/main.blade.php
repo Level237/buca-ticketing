@@ -202,7 +202,7 @@
                                             <span class="text-buca-secondary">{{ __("Add Ticket")}}</span>
                                         </a>
                                         <a href="{{route('tickets.index')}}" class="nav-link ">
-                                            <span class="text-buca-secondary">Listes de tickets</span>
+                                            <span class="text-buca-secondary">{{ __("Ticket List")}}</span>
                                         </a>
                                     </li>
 
@@ -213,25 +213,25 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="{{route('bordereau.stepOne')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
-                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Bordereau</span>
+                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">{{ __("Slip")}}</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="{{ route('travel.list') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="IconChangeColor"  height="20" width="20"><path d="M2 14v-3H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h1l4-7h8l4 7h1a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3zm13.86-5L13 4H7L4.14 9h11.72zM5.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" id="mainIconPathAttribute" fill="#ffffff" stroke-width="0.1" stroke="#ff0000"></path></svg>
-                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">Voyages</span>
+                                <span class="text-buca-secondary -bottom-3" style="margin-left: 5px">{{ __("Travels")}}</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#pagesCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pagesCollapse">
                                 <svg viewbox="0 0 24 24" height="20" width="20" class="text-buca-secondary" xmlns="http://www.w3.org/2000/svg"><path d="M2.250 6.000 A2.250 2.250 0 1 0 6.750 6.000 A2.250 2.250 0 1 0 2.250 6.000 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M4.5,9.75A3.75,3.75,0,0,0,.75,13.5v2.25h1.5l.75,6H6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M17.250 6.000 A2.250 2.250 0 1 0 21.750 6.000 A2.250 2.250 0 1 0 17.250 6.000 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M19.5,9.75a3.75,3.75,0,0,1,3.75,3.75v2.25h-1.5l-.75,6H18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M9.000 3.750 A3.000 3.000 0 1 0 15.000 3.750 A3.000 3.000 0 1 0 9.000 3.750 Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M17.25,13.5a5.25,5.25,0,0,0-10.5,0v2.25H9l.75,7.5h4.5l.75-7.5h2.25Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-                                <span class="text-buca-secondary"  style="margin-left: 5px">Passagers</span>
+                                <span class="text-buca-secondary"  style="margin-left: 5px">{{ __("Passengers")}}</span>
                             </a>
                             <div class="collapse " id="pagesCollapse">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a href="{{ route('passengers.recents') }}" class="nav-link ">
-                                            <span class="text-buca-secondary">Liste des Passagers</span>
+                                            <span class="text-buca-secondary">{{ __("Passenger List")}}</span>
                                         </a>
                                     </li>
 
@@ -312,13 +312,13 @@
                             <li>
                                 <button type="button" class="dropdown-item active" data-theme-value="light">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2" height="18" width="18"><g><path d="M12,4.64A7.36,7.36,0,1,0,19.36,12,7.37,7.37,0,0,0,12,4.64Zm0,12.72A5.36,5.36,0,1,1,17.36,12,5.37,5.37,0,0,1,12,17.36Z" style="fill: currentColor"></path><path d="M12,3.47a1,1,0,0,0,1-1V1a1,1,0,0,0-2,0V2.47A1,1,0,0,0,12,3.47Z" style="fill: currentColor"></path><path d="M4.55,6a1,1,0,0,0,.71.29A1,1,0,0,0,6,6,1,1,0,0,0,6,4.55l-1-1A1,1,0,0,0,3.51,4.93Z" style="fill: currentColor"></path><path d="M2.47,11H1a1,1,0,0,0,0,2H2.47a1,1,0,1,0,0-2Z" style="fill: currentColor"></path><path d="M4.55,18l-1,1a1,1,0,0,0,0,1.42,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l1-1A1,1,0,0,0,4.55,18Z" style="fill: currentColor"></path><path d="M12,20.53a1,1,0,0,0-1,1V23a1,1,0,0,0,2,0V21.53A1,1,0,0,0,12,20.53Z" style="fill: currentColor"></path><path d="M19.45,18A1,1,0,0,0,18,19.45l1,1a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.42Z" style="fill: currentColor"></path><path d="M23,11H21.53a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z" style="fill: currentColor"></path><path d="M18.74,6.26A1,1,0,0,0,19.45,6l1-1a1,1,0,1,0-1.42-1.42l-1,1A1,1,0,0,0,18,6,1,1,0,0,0,18.74,6.26Z" style="fill: currentColor"></path></g></svg>
-                                    Mode Clair
+                                    {{ __("Light Mode")}}
                                 </button>
                             </li>
                             <li>
                                 <button type="button" class="dropdown-item" data-theme-value="dark">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="me-2" height="18" width="18"><path d="M19.57,23.34a1,1,0,0,0,0-1.9,9.94,9.94,0,0,1,0-18.88,1,1,0,0,0,.68-.94,1,1,0,0,0-.68-.95A11.58,11.58,0,0,0,8.88,2.18,12.33,12.33,0,0,0,3.75,12a12.31,12.31,0,0,0,5.11,9.79A11.49,11.49,0,0,0,15.61,24,12.55,12.55,0,0,0,19.57,23.34ZM10,20.17A10.29,10.29,0,0,1,5.75,12a10.32,10.32,0,0,1,4.3-8.19A9.34,9.34,0,0,1,15.59,2a.17.17,0,0,1,.17.13.18.18,0,0,1-.07.2,11.94,11.94,0,0,0-.18,19.21.25.25,0,0,1-.16.45A9.5,9.5,0,0,1,10,20.17Z" style="fill: currentColor"></path></svg>
-                                    Mode Sombre
+                                    {{ __("Dark Mode")}}
                                 </button>
                             </li>
                             <li>
